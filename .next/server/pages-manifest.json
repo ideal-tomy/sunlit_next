@@ -1,8 +1,1 @@
-{
-  "/_app": "pages/_app.js",
-  "/_error": "pages/_error.js",
-  "/_document": "pages/_document.js",
-  "/private-treatment": "pages/private-treatment.js",
-  "/instagram": "pages/instagram.js",
-  "/contact": "pages/contact.js"
-}
+{"/_app":"pages/_app.js","/_error":"pages/_error.js","/acupuncture":"pages/acupuncture.html","/api/openai-chat":"pages/api/openai-chat.js","/blog-post":"pages/blog-post.html","/contact":"pages/contact.html","/blog":"pages/blog.html","/":"pages/index.html","/instagram":"pages/instagram.html","/insurance":"pages/insurance.html","/private-treatment":"pages/private-treatment.html","/staff":"pages/staff.html","/_document":"pages/_document.js","/404":"pages/404.html"}

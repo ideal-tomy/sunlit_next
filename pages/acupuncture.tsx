@@ -71,9 +71,7 @@ const Acupuncture = () => {
                       duration: '60分',
                       description: '全身の経絡に沿って鍼灸治療を行い、身体全体のバランスを整えます。慢性的な疲れや様々な不調にお悩みの方におすすめです。',
                       imageSrc: '/images/acupuncture01.jpg',
-                      imageAlt: '全身鍼灸',
-                      hideTitle: true,
-                      hideIcon: true
+                      imageAlt: '全身鍼灸'
                     }
                   ]
                 },
@@ -87,9 +85,7 @@ const Acupuncture = () => {
                       duration: '30分',
                       description: '定期的なメンテナンスとして、気になる部分を重点的に施術します。忙しい方や部分的な不調にお悩みの方に最適です。',
                       imageSrc: '/images/IMG_0042.jpg',
-                      imageAlt: 'メンテナンス鍼灸',
-                      hideTitle: true,
-                      hideIcon: true
+                      imageAlt: 'メンテナンス鍼灸'
                     }
                   ]
                 }
@@ -112,8 +108,7 @@ const Acupuncture = () => {
                       duration: '症状に応じて',
                       description: '症状に合わせた治療法を提供します。肩こり、腰痛、頭痛など特定の部位の不調に効果的です。',
                       imageSrc: '/images/02-01.png',
-                      imageAlt: '部分鍵灸・マッサージ',
-                      hideIcon: true
+                      imageAlt: '部分鍵灸・マッサージ'
                     }
                   ]
                 }
@@ -201,9 +196,7 @@ const Acupuncture = () => {
                       duration: '40分',
                       description: 'お顔のたるみやシワ、くすみなどにアプローチ。リフトアップ効果と磁気改善が期待できます。',
                       imageSrc: '/images/IMG_0116.jpg',
-                      imageAlt: '美容鍼',
-                      hideTitle: true,
-                      hideIcon: true
+                      imageAlt: '美容鍼'
                     }
                   ]
                 },
@@ -217,9 +210,7 @@ const Acupuncture = () => {
                       duration: '60分',
                       description: '標準コースに加え、首・肩・デコルテのケアや特殊マッサージを含む超贐沃コース。',
                       imageSrc: '/images/05.png',
-                      imageAlt: 'プラチナ美容鍼',
-                      hideTitle: true,
-                      hideIcon: true
+                      imageAlt: 'プラチナ美容鍼'
                     }
                   ]
                 }
