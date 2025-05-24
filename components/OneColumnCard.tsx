@@ -2,11 +2,8 @@ import React from 'react';
 
 // 基本的なカード項目のインターフェース
 interface BaseCardItem {
-  icon: string;
   title: string;
   bgColor?: string;
-  hideTitle?: boolean;
-  hideIcon?: boolean;
 }
 
 // メニューカード項目のインターフェース
@@ -23,10 +20,6 @@ interface MenuCardItem extends BaseCardItem {
 interface MenuGroup {
   title: string;
   items: MenuCardItem[];
-  hideTitle?: boolean;
-  icon?: string;
-  titleStyle?: React.CSSProperties;
-  iconStyle?: React.CSSProperties;
 }
 
 // 1カラムカードのプロパティ
@@ -50,12 +43,7 @@ const OneColumnCard: React.FC<OneColumnCardProps> = ({
     >
       <div className="p-6">
         <div className="flex items-center justify-center mb-5">
-          {!item.hideIcon && (
-            <span className="material-icons text-3xl mr-3" style={{ color: '#3377f9' }}>{item.icon || 'spa'}</span>
-          )}
-          {!item.hideTitle && (
-            <h3 className="text-2xl font-bold text-secondary-dark">{item.title}</h3>
-          )}
+          <h3 className="text-2xl font-bold text-secondary-dark">{item.title}</h3>
         </div>
         
         <div className="mb-4 text-center bg-gradient-to-r from-primary-light to-primary-light bg-opacity-10 py-3 px-4 rounded-lg">
@@ -88,12 +76,9 @@ const OneColumnCard: React.FC<OneColumnCardProps> = ({
       key={index} 
       className="bg-white p-6 rounded-xl shadow-md h-full transform transition duration-300 hover:shadow-lg"
     >
-      {!group.hideTitle && (
-        <div className="flex items-center justify-center mb-6 pb-3 border-b border-primary rounded-lg p-2" style={group.titleStyle || {}}>
-          <span className="material-icons text-3xl mr-3" style={group.iconStyle || {}}>{group.icon || 'menu_book'}</span>
-          <h2 className="text-3xl font-bold text-secondary-dark">{group.title}</h2>
-        </div>
-      )}
+      <div className="flex items-center justify-center mb-6 pb-3 border-b border-primary rounded-lg p-2">
+        <h2 className="text-3xl font-bold text-secondary-dark">{group.title}</h2>
+      </div>
       <div className="flex flex-col h-full">
         {group.items.map((item, idx) => renderMenuItem(item, index + "-" + idx))}
       </div>

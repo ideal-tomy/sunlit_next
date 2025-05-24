@@ -41,7 +41,6 @@ const Staff = () => {
                 <div className="md:w-1/2">
                   <div className="p-6">
                     <div className="flex items-center mb-3">
-                      <span className="material-icons text-3xl text-primary mr-3">person</span>
                       <h3 className="text-2xl font-bold text-secondary-dark">院長 落合 竹一</h3>
                     </div>
                     <p className="text-lg text-gray-600 mb-4">柔道整復師・鍼灸師</p>
@@ -49,7 +48,6 @@ const Staff = () => {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
                       <div className="bg-accent bg-opacity-10 p-3 rounded-lg border-l-4 border-primary">
                         <div className="flex items-center mb-2">
-                          <span className="material-icons text-xl text-primary mr-2">favorite</span>
                           <h4 className="font-bold text-secondary-dark">趣味</h4>
                         </div>
                         <p className="text-lg">ゴルフ・お酒を飲むこと</p>
@@ -57,7 +55,6 @@ const Staff = () => {
                       
                       <div className="bg-accent bg-opacity-10 p-3 rounded-lg border-l-4 border-primary">
                         <div className="flex items-center mb-2">
-                          <span className="material-icons text-xl text-primary mr-2">format_quote</span>
                           <h4 className="font-bold text-secondary-dark">座右の銘</h4>
                         </div>
                         <p className="text-lg">一生感動一生青春</p>
@@ -66,7 +63,6 @@ const Staff = () => {
                     
                     <div className="bg-primary bg-opacity-5 px-6 py-5 rounded-lg mb-4">
                       <div className="flex items-center mb-3">
-                        <span className="material-icons text-2xl text-secondary mr-3">chat</span>
                         <h4 className="text-xl font-bold text-secondary-dark">ひとこと</h4>
                       </div>
                       <p className="text-lg text-gray-700 py-2">
@@ -89,7 +85,6 @@ const Staff = () => {
                 <div className="md:w-1/2">
                   <div className="p-6">
                     <div className="flex items-center mb-3">
-                      <span className="material-icons text-3xl text-primary mr-3">person</span>
                       <h3 className="text-2xl font-bold text-secondary-dark">高橋翔太</h3>
                     </div>
                     <p className="text-lg text-gray-600 mb-4">柔道整復師</p>
@@ -97,7 +92,6 @@ const Staff = () => {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
                       <div className="bg-accent bg-opacity-10 p-3 rounded-lg border-l-4 border-primary">
                         <div className="flex items-center mb-2">
-                          <span className="material-icons text-xl text-primary mr-2">favorite</span>
                           <h4 className="font-bold text-secondary-dark">趣味</h4>
                         </div>
                         <p className="text-lg">サッカー観戦　キャンプ</p>
@@ -105,7 +99,6 @@ const Staff = () => {
                       
                       <div className="bg-accent bg-opacity-10 p-3 rounded-lg border-l-4 border-primary">
                         <div className="flex items-center mb-2">
-                          <span className="material-icons text-xl text-primary mr-2">format_quote</span>
                           <h4 className="font-bold text-secondary-dark">座右の銘</h4>
                         </div>
                         <p className="text-lg">一期一会</p>
@@ -114,7 +107,6 @@ const Staff = () => {
                     
                     <div className="bg-primary bg-opacity-5 px-6 py-5 rounded-lg mb-4">
                       <div className="flex items-center mb-3">
-                        <span className="material-icons text-2xl text-secondary mr-3">chat</span>
                         <h4 className="text-xl font-bold text-secondary-dark">ひとこと</h4>
                       </div>
                       <p className="text-lg text-gray-700 py-2">
@@ -138,7 +130,6 @@ const Staff = () => {
                 <div className="md:w-1/2">
                   <div className="p-6">
                     <div className="flex items-center mb-3">
-                      <span className="material-icons text-3xl text-primary mr-3">person</span>
                       <h3 className="text-2xl font-bold text-secondary-dark">坂口舞</h3>
                     </div>
                     <p className="text-lg text-gray-600 mb-4">柔道整復師</p>
@@ -146,7 +137,6 @@ const Staff = () => {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
                       <div className="bg-accent bg-opacity-10 p-3 rounded-lg border-l-4 border-primary">
                         <div className="flex items-center mb-2">
-                          <span className="material-icons text-xl text-primary mr-2">favorite</span>
                           <h4 className="font-bold text-secondary-dark">趣味</h4>
                         </div>
                         <p className="text-lg">ディズニー・飛行機（旅客機）</p>
@@ -154,7 +144,6 @@ const Staff = () => {
                       
                       <div className="bg-accent bg-opacity-10 p-3 rounded-lg border-l-4 border-primary">
                         <div className="flex items-center mb-2">
-                          <span className="material-icons text-xl text-primary mr-2">format_quote</span>
                           <h4 className="font-bold text-secondary-dark">座右の銘</h4>
                         </div>
                         <p className="text-lg">一日一笑</p>
@@ -163,7 +152,6 @@ const Staff = () => {
                     
                     <div className="bg-primary bg-opacity-5 px-6 py-5 rounded-lg mb-4">
                       <div className="flex items-center mb-3">
-                        <span className="material-icons text-2xl text-secondary mr-3">chat</span>
                         <h4 className="text-xl font-bold text-secondary-dark">ひとこと</h4>
                       </div>
                       <p className="text-lg text-gray-700 py-2">
@@ -187,7 +175,6 @@ const Staff = () => {
                 <div className="md:w-1/2">
                   <div className="p-6">
                     <div className="flex items-center mb-3">
-                      <span className="material-icons text-3xl text-primary mr-3">person</span>
                       <h3 className="text-2xl font-bold text-secondary-dark">落合桃子</h3>
                     </div>
                     <p className="text-lg text-gray-600 mb-4">セラピスト</p>
@@ -195,7 +182,6 @@ const Staff = () => {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
                       <div className="bg-accent bg-opacity-10 p-3 rounded-lg border-l-4 border-primary">
                         <div className="flex items-center mb-2">
-                          <span className="material-icons text-xl text-primary mr-2">favorite</span>
                           <h4 className="font-bold text-secondary-dark">趣味</h4>
                         </div>
                         <p className="text-lg">旅行　食べ歩き</p>
@@ -203,7 +189,6 @@ const Staff = () => {
                       
                       <div className="bg-accent bg-opacity-10 p-3 rounded-lg border-l-4 border-primary">
                         <div className="flex items-center mb-2">
-                          <span className="material-icons text-xl text-primary mr-2">format_quote</span>
                           <h4 className="font-bold text-secondary-dark">座右の銘</h4>
                         </div>
                         <p className="text-lg">継続は力なり</p>
@@ -212,7 +197,6 @@ const Staff = () => {
                     
                     <div className="bg-primary bg-opacity-5 px-6 py-5 rounded-lg mb-4">
                       <div className="flex items-center mb-3">
-                        <span className="material-icons text-2xl text-secondary mr-3">chat</span>
                         <h4 className="text-xl font-bold text-secondary-dark">ひとこと</h4>
                       </div>
                       <p className="text-lg text-gray-700 py-2">

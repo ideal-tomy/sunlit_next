@@ -41,15 +41,9 @@ const PrivateTreatment = () => {
             menuGroups={[
               {
                 title: '全身整体メニュー',
-                icon: 'menu_book',
-                titleStyle: { backgroundColor: '#f9aa33', padding: '8px', borderRadius: '8px' },
-                iconStyle: { color: '#3377f9' },
                 items: [
                   {
-                    icon: 'spa',
                     title: '全身整体',
-                    hideTitle: true,
-                    hideIcon: true,
                     price: '¥6,200',
                     initialPrice: '¥5,200',
                     duration: '60分',
@@ -61,15 +55,9 @@ const PrivateTreatment = () => {
               },
               {
                 title: 'メンテナンス整体メニュー',
-                icon: 'menu_book',
-                titleStyle: { backgroundColor: '#f9aa33', padding: '8px', borderRadius: '8px' },
-                iconStyle: { color: '#3377f9' },
                 items: [
                   {
-                    icon: 'spa',
                     title: 'メンテナンス整体',
-                    hideTitle: true,
-                    hideIcon: true,
                     price: '¥3,600',
                     initialPrice: '¥3,100',
                     duration: '30分',
@@ -91,12 +79,8 @@ const PrivateTreatment = () => {
             menuGroups={[
               {
                 title: '特別整体',
-                icon: 'healing',
-                titleStyle: { backgroundColor: '#f9aa33', padding: '8px', borderRadius: '8px' },
-                iconStyle: { color: '#3377f9' },
                 items: [
                   {
-                    icon: 'attach_money',
                     title: '料金・所要時間',
                     price: '¥8,800',
                     initialPrice: '¥7,800',
@@ -123,15 +107,9 @@ const PrivateTreatment = () => {
             menuGroups={[
               {
                 title: '足裏ケア',
-                icon: 'healing',
-                titleStyle: { backgroundColor: '#f9aa33', padding: '8px', borderRadius: '8px' },
-                iconStyle: { color: '#3377f9' },
                 items: [
                   {
-                    icon: 'spa',
                     title: '足裏ケア',
-                    hideTitle: true,
-                    hideIcon: true,
                     price: '¥3,600',
                     duration: '30分',
                     description: '足裏の反射区を刷激し、全身の血行促進や疲労回復を促します。むくみや冷え性の改善にも効果的です。',
@@ -142,15 +120,9 @@ const PrivateTreatment = () => {
               },
               {
                 title: '眼精疲労ケア',
-                icon: 'healing',
-                titleStyle: { backgroundColor: '#f9aa33', padding: '8px', borderRadius: '8px' },
-                iconStyle: { color: '#3377f9' },
                 items: [
                   {
-                    icon: 'spa',
                     title: '眼精疲労ケア',
-                    hideTitle: true,
-                    hideIcon: true,
                     price: '¥3,600',
                     duration: '30分',
                     description: '目の周りや頭部の締張をほぐし、眼精疲労や頭痛の緩和を目指します。デスクワークやスマホ使用が多い方におすすめです。',
@@ -173,15 +145,9 @@ const PrivateTreatment = () => {
             menuGroups={[
               {
                 title: 'ファンクショナルカッピング',
-                icon: 'healing',
-                titleStyle: { backgroundColor: '#f9aa33', padding: '8px', borderRadius: '8px' },
-                iconStyle: { color: '#3377f9' },
                 items: [
                   {
-                    icon: 'spa',
                     title: 'ファンクショナルカッピング',
-                    hideTitle: true,
-                    hideIcon: true,
                     price: '¥2,800',
                     duration: '30分',
                     description: '一般的な吸い玉法ではなく、筋肉や経絡に置くことでモビリティの向上や痛みの減少を目指す法です。',
@@ -192,15 +158,9 @@ const PrivateTreatment = () => {
               },
               {
                 title: '極上ハンドケア',
-                icon: 'healing',
-                titleStyle: { backgroundColor: '#f9aa33', padding: '8px', borderRadius: '8px' },
-                iconStyle: { color: '#3377f9' },
                 items: [
                   {
-                    icon: 'spa',
                     title: '極上ハンドケア',
-                    hideTitle: true,
-                    hideIcon: true,
                     price: '¥1,900',
                     duration: '15分',
                     description: '手や腕の疲れをほぐし、血行を促進します。スマホやパソコン操作で手や腕に疲れを感じる方におすすめです。',
@@ -217,7 +177,6 @@ const PrivateTreatment = () => {
           
           <div className="max-w-4xl mx-auto bg-white p-6 rounded-lg border-l-4 border-accent mb-12">
             <h3 className="text-xl font-bold mb-4 text-secondary-dark flex items-center">
-              <span className="material-icons text-accent mr-2">info</span>
               注意事項
             </h3>
             <ul className="list-disc pl-6 space-y-3 text-gray-700">
@@ -229,7 +188,6 @@ const PrivateTreatment = () => {
 
           <div className="text-center mb-12">
             <Link href="/contact" className="inline-block bg-primary hover:bg-primary-dark text-white font-bold py-3 px-8 rounded-full transition duration-300 transform hover:-translate-y-1 flex items-center justify-center mx-auto">
-              <span className="material-icons mr-2">calendar_today</span>
               ご予約・お問い合わせはこちら
             </Link>
           </div>

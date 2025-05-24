@@ -2,6 +2,7 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/api/openai-chat": "pages/api/openai-chat.js",
+  "/private-treatment": "pages/private-treatment.js",
+  "/instagram": "pages/instagram.js",
   "/contact": "pages/contact.js"
 }

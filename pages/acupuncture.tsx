@@ -29,13 +29,11 @@ const Acupuncture = () => {
             <InfoCardGrid
               items={[
                 {
-                  icon: 'person',
                   title: '一人ひとりに合わせたアプローチ',
                   description: '当院の鍼灸治療は様々な症状でお困りの方に一人一人違った形でアプローチをすることを心がけています。',
                   bgColor: 'bg-white'
                 },
                 {
-                  icon: 'healing',
                   title: '局所治療と全身治療',
                   description: '当院の鍼灸治療はコリや疲れに対する局所治療は勘論ですが、気・血の滞りを改善する為の全身への経絡治療も行います。',
                   bgColor: 'bg-secondary-light bg-opacity-10'
@@ -65,12 +63,8 @@ const Acupuncture = () => {
               menuGroups={[
                 {
                   title: '全身鍼灸メニュー',
-                  icon: 'healing',
-                  titleStyle: { backgroundColor: '#f9aa33', padding: '8px', borderRadius: '8px' },
-                  iconStyle: { color: '#3377f9' },
                   items: [
                     {
-                      icon: 'spa',
                       title: '全身鍼灸',
                       price: '¥6,900',
                       initialPrice: '¥5,900',
@@ -85,12 +79,8 @@ const Acupuncture = () => {
                 },
                 {
                   title: 'メンテナンス鍼灸メニュー',
-                  icon: 'healing',
-                  titleStyle: { backgroundColor: '#f9aa33', padding: '8px', borderRadius: '8px' },
-                  iconStyle: { color: '#3377f9' },
                   items: [
                     {
-                      icon: 'spa',
                       title: 'メンテナンス鍼灸',
                       price: '¥4,600',
                       initialPrice: '¥4,100',
@@ -115,12 +105,8 @@ const Acupuncture = () => {
               menuGroups={[
                 {
                   title: '部分鍼灸・マッサージ',
-                  icon: 'healing',
-                  titleStyle: { backgroundColor: '#f9aa33', padding: '8px', borderRadius: '8px' },
-                  iconStyle: { color: '#3377f9' },
                   items: [
                     {
-                      icon: 'attach_money',
                       title: '料金・所要時間',
                       price: '¥700〜',
                       duration: '症状に応じて',
@@ -138,7 +124,6 @@ const Acupuncture = () => {
 
             <div className="mb-12 bg-white p-6 rounded-lg shadow-lg">
               <h2 className="text-2xl font-bold mb-4 text-secondary-dark border-b-2 border-primary pb-2 flex items-center justify-center">
-                <span className="material-icons mr-2 text-primary">spa</span>
                 美容鍼
               </h2>
               
@@ -177,13 +162,11 @@ const Acupuncture = () => {
                 <InfoCardGrid
                   items={[
                     {
-                      icon: 'science',
                       title: '美容鍼の仕組み',
                       description: '鍼を打つことでお顔に小さな傷が出来ます。傷がつくことで【線維芽細胞】が働き傷を修復します。傷を修復する時に自身の肥細胞が新しくなるため肥質の改善に繋がります。',
                       bgColor: 'bg-white'
                     },
                     {
-                      icon: 'favorite',
                       title: '血流改善の効果',
                       description: '鍼を打つことで血流の改善がみられ固まった表情筋が柔らかくなり、重たい老廃物も流れるため術後すぐに引きあがった実感を得られます。',
                       bgColor: 'bg-secondary-light bg-opacity-10'
@@ -196,7 +179,6 @@ const Acupuncture = () => {
                 
                 <div className="bg-accent bg-opacity-10 p-4 rounded-lg border-l-4 border-accent">
                   <h3 className="flex items-center text-xl font-bold mb-2 text-secondary-dark">
-                    <span className="material-icons mr-2 text-accent">info</span>
                     安心して受けていただけます
                   </h3>
                   <p className="text-gray-700">
@@ -211,12 +193,8 @@ const Acupuncture = () => {
               menuGroups={[
                 {
                   title: '美容鍼（40分）',
-                  icon: 'healing',
-                  titleStyle: { backgroundColor: '#f9aa33', padding: '8px', borderRadius: '8px' },
-                  iconStyle: { color: '#3377f9' },
                   items: [
                     {
-                      icon: 'spa',
                       title: '美容鍼',
                       price: '¥5,700',
                       initialPrice: '¥5,200',
@@ -231,12 +209,8 @@ const Acupuncture = () => {
                 },
                 {
                   title: 'プラチナ美容鍼（60分）',
-                  icon: 'healing',
-                  titleStyle: { backgroundColor: '#f9aa33', padding: '8px', borderRadius: '8px' },
-                  iconStyle: { color: '#3377f9' },
                   items: [
                     {
-                      icon: 'spa',
                       title: 'プラチナ美容鍼',
                       price: '¥7,800',
                       initialPrice: '¥6,800',

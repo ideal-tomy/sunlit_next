@@ -41,7 +41,6 @@ const Insurance = () => {
                 className="w-full h-auto rounded-lg shadow-lg mb-8"
               />
               <h2 className="text-2xl font-bold mb-4 text-secondary-dark flex items-center">
-                <span className="material-icons text-primary mr-2">medical_services</span>
                 保険診療の特徴
               </h2>
               <div className="bg-white p-6 rounded-lg shadow-sm border-l-4 border-primary mb-6">
@@ -55,7 +54,6 @@ const Insurance = () => {
               {/* 保険診療のワークフロー */}
               <div className="mb-8">
                 <h3 className="text-2xl font-bold mb-6 text-secondary-dark flex items-center justify-center">
-                  <span className="material-icons text-primary mr-2">timeline</span>
                   治療の流れ
                 </h3>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
@@ -91,41 +89,27 @@ const Insurance = () => {
             </div>
             <div className="mb-12">
               <h2 className="text-2xl font-bold mb-4 text-secondary-dark flex items-center justify-center">
-                <span className="material-icons text-primary mr-2">category</span>
                 保険診療の種類
               </h2>
               {/* 整形外科とリハビリテーション */}
               <div className="bg-primary bg-opacity-10 p-4 rounded-lg mb-8">
                 <h3 className="text-2xl font-bold text-secondary-dark flex items-center justify-center">
-                  <span className="material-icons text-primary mr-2">medical_services</span>
                   整形外科・リハビリテーション
                 </h3>
               </div>
               <InfoCardGrid
                 menuGroups={[{
                   title: '整形外科',
-                  icon: 'healing',
-                  titleStyle: { backgroundColor: '#f9aa33', padding: '8px', borderRadius: '8px' },
-                  iconStyle: { color: '#3377f9' },
                   items: [{
-                    icon: 'healing',
                     title: '整形外科',
-                    hideTitle: true,
-                    hideIcon: true,
                     price: '保険適用(税込)',
                     duration: '症状により異なります',
                     description: '怪我や整形外科的症状に対する専門的な治療を行います。'
                   }]
                 }, {
                   title: 'リハビリテーション',
-                  icon: 'sports',
-                  titleStyle: { backgroundColor: '#f9aa33', padding: '8px', borderRadius: '8px' },
-                  iconStyle: { color: '#3377f9' },
                   items: [{
-                    icon: 'sports',
                     title: 'リハビリテーション',
-                    hideTitle: true,
-                    hideIcon: true,
                     price: '保険適用(税込)',
                     duration: '指示により異なります',
                     description: '機能回復や体力向上のためのリハビリテーションを提供します。'
@@ -141,28 +125,16 @@ const Insurance = () => {
                 <InfoCardGrid
                   menuGroups={[{
                     title: '鍼灸治療',
-                    icon: 'spa',
-                    titleStyle: { backgroundColor: '#f9aa33', padding: '8px', borderRadius: '8px' },
-                    iconStyle: { color: '#3377f9' },
                     items: [{
-                      icon: 'spa',
                       title: '鍼灸治療',
-                      hideTitle: true,
-                      hideIcon: true,
                       price: '保険適用(税込)',
                       duration: '20分程度',
                       description: '保険適用の鍼灸治療で、痛みの緩和や血行改善を促進します。'
                     }]
                   }, {
                     title: 'マッサージ治療',
-                    icon: 'front_hand',
-                    titleStyle: { backgroundColor: '#f9aa33', padding: '8px', borderRadius: '8px' },
-                    iconStyle: { color: '#3377f9' },
                     items: [{
-                      icon: 'front_hand',
                       title: 'マッサージ治療',
-                      hideTitle: true,
-                      hideIcon: true,
                       price: '保険適用(税込)',
                       duration: '15分程度',
                       description: '機能回復や痛みの緩和を目的とした医療マッサージを行います。'
@@ -181,7 +153,6 @@ const Insurance = () => {
             </div>
             <div className="mb-12">
               <h2 className="text-2xl font-bold mb-6 text-secondary-dark flex items-center justify-center">
-                <span className="material-icons text-primary mr-2">timeline</span>
                 診療の流れ
               </h2>
               <div className="max-w-4xl mx-auto">
@@ -232,7 +203,6 @@ const Insurance = () => {
             <div className="mb-6">
               <div className="bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-300 hover:shadow-xl hover:-translate-y-1">
                 <div className="bg-primary bg-opacity-10 p-3 flex items-center">
-                  <span className="material-icons text-2xl text-primary mr-2">local_hospital</span>
                   <h3 className="text-xl font-bold text-secondary-dark">自賠責治療</h3>
                 </div>
                 <div className="p-5">
@@ -252,7 +222,6 @@ const Insurance = () => {
             </div>
             <div className="bg-accent bg-opacity-10 p-6 rounded-lg mt-8 mb-12">
               <h3 className="text-xl font-bold mb-4 text-secondary-dark flex items-center">
-                <span className="material-icons text-primary mr-2">info</span>
                 保険診療に関する注意事項
               </h3>
               <ul className="list-disc list-inside space-y-2 text-gray-700">
@@ -264,7 +233,6 @@ const Insurance = () => {
             </div>
             <div className="text-center">
               <Link href="/contact" className="inline-block bg-primary hover:bg-primary-dark text-white font-bold py-3 px-8 rounded-full transition duration-300 transform hover:-translate-y-1 flex items-center justify-center mx-auto" style={{ maxWidth: '400px' }}>
-                <span className="material-icons mr-2">calendar_today</span>
                 ご予約・お問い合わせ
               </Link>
             </div>
