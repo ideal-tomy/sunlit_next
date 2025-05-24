@@ -1,5 +1,4 @@
 import React from 'react';
-// 画像をpublicディレクトリから直接参照
 import Link from 'next/link';
 import InfoCardGrid from '../components/InfoCardGrid';
 
@@ -13,12 +12,10 @@ const Insurance = () => {
           <h1 style={{ color: 'white', fontSize: '2rem', fontWeight: 'bold', textAlign: 'center' }}>保険診療</h1>
         </div>
       </div>
-      
       <div className="py-12 px-4 sm:px-6 lg:px-8">
         <div className="container mx-auto">
           <div className="max-w-4xl mx-auto bg-white p-6 sm:p-8 rounded-lg shadow-sm mb-12">
             <h2 className="text-2xl font-bold mb-6 text-secondary-dark text-center">サンリットウエストの保険診療</h2>
-            
             <div className="bg-accent bg-opacity-10 p-4 rounded-lg mb-6 border-l-4 border-primary">
               <p className="text-lg text-gray-700">
                 突然の怪我やスポーツ障害，強い痛みでお困りの方には<span className="font-bold text-primary">保険診療</span>もご案内しております。
@@ -26,7 +23,6 @@ const Insurance = () => {
                 当院では保険診療と併用して更に早く完治できるように特別な電気治療や部分鍼治療を推奨しております。
               </p>
             </div>
-            
             <p className="text-lg mb-4 text-gray-700">
               学生さんの怪我に対する治療も手厚く対応しております。
               高校生までは医療証を使えますのでご持参ください。
@@ -34,13 +30,9 @@ const Insurance = () => {
             <p className="text-lg mb-6 text-gray-700">
               経験豊富な施術者が怪我・痛みに対し的確なアプローチで出来るだけ早く現場復帰が出来るよう心がけておりますので安心してご相談下さい
             </p>
-            
-            
           </div>
-          
           <h1 className="text-3xl md:text-4xl font-bold mb-8 text-center text-secondary-dark">保険診療</h1>
           <div className="w-24 h-1 bg-primary mx-auto mb-12"></div>
-          
           <div className="max-w-4xl mx-auto">
             <div className="mb-12">
               <img 
@@ -60,7 +52,6 @@ const Insurance = () => {
                   そのため、保険診療を受ける際には、事前に当院までご相談ください。
                 </p>
               </div>
-
               {/* 保険診療のワークフロー */}
               <div className="mb-8">
                 <h3 className="text-2xl font-bold mb-6 text-secondary-dark flex items-center justify-center">
@@ -98,13 +89,11 @@ const Insurance = () => {
                 </div>
               </div>
             </div>
-
             <div className="mb-12">
               <h2 className="text-2xl font-bold mb-4 text-secondary-dark flex items-center justify-center">
                 <span className="material-icons text-primary mr-2">category</span>
                 保険診療の種類
               </h2>
-              
               {/* 整形外科とリハビリテーション */}
               <div className="bg-primary bg-opacity-10 p-4 rounded-lg mb-8">
                 <h3 className="text-2xl font-bold text-secondary-dark flex items-center justify-center">
@@ -112,158 +101,134 @@ const Insurance = () => {
                   整形外科・リハビリテーション
                 </h3>
               </div>
-              
               <InfoCardGrid
-                menuGroups={[
-                  {
-                    title: '整形外科',
+                menuGroups={[{
+                  title: '整形外科',
+                  icon: 'healing',
+                  titleStyle: { backgroundColor: '#f9aa33', padding: '8px', borderRadius: '8px' },
+                  iconStyle: { color: '#3377f9' },
+                  items: [{
                     icon: 'healing',
-                    titleStyle: { backgroundColor: '#f9aa33', padding: '8px', borderRadius: '8px' },
-                    iconStyle: { color: '#3377f9' },
-                    items: [
-                      {
-                        icon: 'healing',
-                        title: '整形外科',
-                        hideTitle: true,
-                        hideIcon: true,
-                        price: '保険適用(税込)',
-                        duration: '症状により異なります',
-                        description: '怪我や整形外科的症状に対する専門的な治療を行います。'
-                      }
-                    ]
-                  },
-                  {
-                    title: 'リハビリテーション',
+                    title: '整形外科',
+                    hideTitle: true,
+                    hideIcon: true,
+                    price: '保険適用(税込)',
+                    duration: '症状により異なります',
+                    description: '怪我や整形外科的症状に対する専門的な治療を行います。'
+                  }]
+                }, {
+                  title: 'リハビリテーション',
+                  icon: 'sports',
+                  titleStyle: { backgroundColor: '#f9aa33', padding: '8px', borderRadius: '8px' },
+                  iconStyle: { color: '#3377f9' },
+                  items: [{
                     icon: 'sports',
-                    titleStyle: { backgroundColor: '#f9aa33', padding: '8px', borderRadius: '8px' },
-                    iconStyle: { color: '#3377f9' },
-                    items: [
-                      {
-                        icon: 'sports',
-                        title: 'リハビリテーション',
-                        hideTitle: true,
-                        hideIcon: true,
-                        price: '保険適用(税込)',
-                        duration: '指示により異なります',
-                        description: '機能回復や体力向上のためのリハビリテーションを提供します。'
-                      }
-                    ]
-                  }
-                ]}
+                    title: 'リハビリテーション',
+                    hideTitle: true,
+                    hideIcon: true,
+                    price: '保険適用(税込)',
+                    duration: '指示により異なります',
+                    description: '機能回復や体力向上のためのリハビリテーションを提供します。'
+                  }]
+                }]}
                 columns={2}
                 gap="gap-6"
                 marginBottom="mb-8"
               />
-              
               {/* 鍼灸治療とマッサージ治療 */}
               <div className="mt-16 mb-12">
                 <h3 className="text-2xl font-bold mb-6 text-secondary-dark text-center bg-primary-light py-3 px-4 rounded-lg border-l-4 border-primary">鍼灸・マッサージ治療</h3>
-                
                 <InfoCardGrid
-                  menuGroups={[
-                    {
-                      title: '鍼灸治療',
+                  menuGroups={[{
+                    title: '鍼灸治療',
+                    icon: 'spa',
+                    titleStyle: { backgroundColor: '#f9aa33', padding: '8px', borderRadius: '8px' },
+                    iconStyle: { color: '#3377f9' },
+                    items: [{
                       icon: 'spa',
-                      titleStyle: { backgroundColor: '#f9aa33', padding: '8px', borderRadius: '8px' },
-                      iconStyle: { color: '#3377f9' },
-                      items: [
-                        {
-                          icon: 'spa',
-                          title: '鍼灸治療',
-                          hideTitle: true,
-                          hideIcon: true,
-                          price: '保険適用(税込)',
-                          duration: '20分程度',
-                          description: '保険適用の鍼灸治療で、痛みの緩和や血行改善を促進します。'
-                        }
-                      ]
-                    },
-                    {
-                      title: 'マッサージ治療',
+                      title: '鍼灸治療',
+                      hideTitle: true,
+                      hideIcon: true,
+                      price: '保険適用(税込)',
+                      duration: '20分程度',
+                      description: '保険適用の鍼灸治療で、痛みの緩和や血行改善を促進します。'
+                    }]
+                  }, {
+                    title: 'マッサージ治療',
+                    icon: 'front_hand',
+                    titleStyle: { backgroundColor: '#f9aa33', padding: '8px', borderRadius: '8px' },
+                    iconStyle: { color: '#3377f9' },
+                    items: [{
                       icon: 'front_hand',
-                      titleStyle: { backgroundColor: '#f9aa33', padding: '8px', borderRadius: '8px' },
-                      iconStyle: { color: '#3377f9' },
-                      items: [
-                        {
-                          icon: 'front_hand',
-                          title: 'マッサージ治療',
-                          hideTitle: true,
-                          hideIcon: true,
-                          price: '保険適用(税込)',
-                          duration: '15分程度',
-                          description: '機能回復や痛みの緩和を目的とした医療マッサージを行います。'
-                        }
-                      ]
-                    }
-                  ]}
+                      title: 'マッサージ治療',
+                      hideTitle: true,
+                      hideIcon: true,
+                      price: '保険適用(税込)',
+                      duration: '15分程度',
+                      description: '機能回復や痛みの緩和を目的とした医療マッサージを行います。'
+                    }]
+                  }]}
                   columns={2}
                   gap="gap-6"
                   marginBottom="mb-8"
                 />
               </div>
-              
               <div className="bg-white p-6 rounded-lg shadow-sm border-l-4 border-primary mt-12 mb-6">
                 <p className="text-lg text-gray-700">
                   以上のような保険診療の種類があります。当院では、保険診療と併用して更に早く完治できるように<span className="font-bold text-primary">特別な電気治療や部分鍼治療</span>を推奨しております。
                 </p>
               </div>
             </div>
-
             <div className="mb-12">
               <h2 className="text-2xl font-bold mb-6 text-secondary-dark flex items-center justify-center">
                 <span className="material-icons text-primary mr-2">timeline</span>
                 診療の流れ
               </h2>
-              <div className="flex flex-col md:flex-row md:justify-center md:items-stretch gap-8">
-                {/* ステップ1 */}
-                <div className="relative flex-1 bg-white rounded-2xl shadow-xl p-8 flex flex-col items-center transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl">
-                  <div className="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-3xl font-bold mb-4 shadow-lg">
-                    1
-                  </div>
-                  <span className="material-icons text-4xl text-primary mb-2">assignment_ind</span>
-                  <h3 className="text-xl font-bold mb-2 text-secondary-dark">初診・受付</h3>
-                  <p className="text-gray-700 text-center">保険証をご持参の上、受付で記入していただきます。症状の詳細や怪我時の状況を確認し、初回検査を行います。</p>
-                  {/* 矢印 */}
-                  <div className="hidden md:block absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-1/2">
-                    <span className="material-icons text-4xl text-primary">arrow_forward</span>
-                  </div>
-                </div>
-                {/* ステップ2 */}
-                <div className="relative flex-1 bg-white rounded-2xl shadow-xl p-8 flex flex-col items-center transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl">
-                  <div className="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-3xl font-bold mb-4 shadow-lg">
-                    2
-                  </div>
-                  <span className="material-icons text-4xl text-primary mb-2">medical_services</span>
-                  <h3 className="text-xl font-bold mb-2 text-secondary-dark">検査・診断</h3>
-                  <p className="text-gray-700 text-center">症状に応じた詳細な検査を行います。</p>
-                  <div className="hidden md:block absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-1/2">
-                    <span className="material-icons text-4xl text-primary">arrow_forward</span>
-                  </div>
-                </div>
-                {/* ステップ3 */}
-                <div className="relative flex-1 bg-white rounded-2xl shadow-xl p-8 flex flex-col items-center transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl">
-                  <div className="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-3xl font-bold mb-4 shadow-lg">
-                    3
-                  </div>
-                  <span className="material-icons text-4xl text-primary mb-2">monitor_heart</span>
-                  <h3 className="text-xl font-bold mb-2 text-secondary-dark">経過観察</h3>
-                  <p className="text-gray-700 text-center">定期的な通院で回復状況を確認し、治療計画を必要に応じて調整します。週に1～2回の通院で軽快な回復を目指します。</p>
-                  <div className="hidden md:block absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-1/2">
-                    <span className="material-icons text-4xl text-primary">arrow_forward</span>
-                  </div>
-                </div>
-                {/* ステップ4 */}
-                <div className="relative flex-1 bg-white rounded-2xl shadow-xl p-8 flex flex-col items-center transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl">
-                  <div className="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-3xl font-bold mb-4 shadow-lg">
-                    4
-                  </div>
-                  <span className="material-icons text-4xl text-primary mb-2">check_circle</span>
-                  <h3 className="text-xl font-bold mb-2 text-secondary-dark">回復・終了</h3>
-                  <p className="text-gray-700 text-center">症状の改善を確認し、日常生活やスポーツ活動への復帰を支援します。必要に応じて再発防止のためのアドバイスも行います。</p>
-                </div>
+              <div className="max-w-4xl mx-auto">
+                <ul className="space-y-8">
+                  <li className="flex items-center gap-8">
+                    <div className="w-14 h-14 bg-blue-500 text-white rounded-full flex items-center justify-center text-2xl font-bold flex-shrink-0">1</div>
+                    <div className="w-28 h-14 flex flex-col items-center justify-center bg-blue-700 text-white font-bold rounded-full shadow text-sm leading-tight">
+                      <span className="fancy-underline">初診</span>
+                      <span className="fancy-underline mt-1">受付</span>
+                    </div>
+                    <div className="flex-1 w-full max-w-2xl bg-white shadow px-6 py-4 rounded border-l-4 border-blue-500 text-gray-900 text-base md:text-lg">
+                      保険証をご持参の上、受付で記入していただきます。症状の詳細や怪我時の状況を確認し、初回検査を行います。
+                    </div>
+                  </li>
+                  <li className="flex items-center gap-8">
+                    <div className="w-14 h-14 bg-blue-500 text-white rounded-full flex items-center justify-center text-2xl font-bold flex-shrink-0">2</div>
+                    <div className="w-28 h-14 flex flex-col items-center justify-center bg-blue-700 text-white font-bold rounded-full shadow text-sm leading-tight">
+                      <span className="fancy-underline">検査</span>
+                      <span className="fancy-underline mt-1">診断</span>
+                    </div>
+                    <div className="flex-1 w-full max-w-2xl bg-white shadow px-6 py-4 rounded border-l-4 border-blue-500 text-gray-900 text-base md:text-lg">
+                      症状に応じた詳細な検査を行います。具体的には徒手検査や姿勢・可動域のチェック、姿勢や歩行チェックなどを行います。
+                    </div>
+                  </li>
+                  <li className="flex items-center gap-8">
+                    <div className="w-14 h-14 bg-blue-500 text-white rounded-full flex items-center justify-center text-2xl font-bold flex-shrink-0">3</div>
+                    <div className="w-28 h-14 flex flex-col items-center justify-center bg-blue-700 text-white font-bold rounded-full shadow text-sm leading-tight">
+                      <span className="fancy-underline">経過</span>
+                      <span className="fancy-underline mt-1">観察</span>
+                    </div>
+                    <div className="flex-1 w-full max-w-2xl bg-white shadow px-6 py-4 rounded border-l-4 border-blue-500 text-gray-900 text-base md:text-lg">
+                      定期的な通院で回復状況を確認し、治療計画を必要に応じて調整します。週に1～2回の通院で軽快な回復を目指します。
+                    </div>
+                  </li>
+                  <li className="flex items-center gap-8">
+                    <div className="w-14 h-14 bg-blue-500 text-white rounded-full flex items-center justify-center text-2xl font-bold flex-shrink-0">4</div>
+                    <div className="w-28 h-14 flex flex-col items-center justify-center bg-blue-700 text-white font-bold rounded-full shadow text-sm leading-tight">
+                      <span className="fancy-underline">回復</span>
+                      <span className="fancy-underline mt-1">終了</span>
+                    </div>
+                    <div className="flex-1 w-full max-w-2xl bg-white shadow px-6 py-4 rounded border-l-4 border-blue-500 text-gray-900 text-base md:text-lg">
+                      症状の改善を確認し、日常生活やスポーツ活動への復帰を支援します。必要に応じて再発防止のためのアドバイスも行います。
+                    </div>
+                  </li>
+                </ul>
               </div>
             </div>
-
             <div className="mb-6">
               <div className="bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-300 hover:shadow-xl hover:-translate-y-1">
                 <div className="bg-primary bg-opacity-10 p-3 flex items-center">
@@ -285,26 +250,23 @@ const Insurance = () => {
                 </div>
               </div>
             </div>
-              
-              <div className="bg-accent bg-opacity-10 p-6 rounded-lg mt-8 mb-12">
-                <h3 className="text-xl font-bold mb-4 text-secondary-dark flex items-center">
-                  <span className="material-icons text-primary mr-2">info</span>
-                  保険診療に関する注意事項
-                </h3>
-                <ul className="list-disc list-inside space-y-2 text-gray-700">
-                  <li>保険証は毎回ご持参ください</li>
-                  <li>保険適用の治療は医師の指示に基づいて行われます</li>
-                  <li>保険診療と自費診療を併用する場合は事前にご相談ください</li>
-                  <li>交通事故の場合は自賠責保険の適用となります</li>
-                </ul>
-              </div>
-              
-              <div className="text-center">
-                <Link href="/contact" className="inline-block bg-primary hover:bg-primary-dark text-white font-bold py-3 px-8 rounded-full transition duration-300 transform hover:-translate-y-1 flex items-center justify-center mx-auto" style={{ maxWidth: '400px' }}>
-                  <span className="material-icons mr-2">calendar_today</span>
-                  ご予約・お問い合わせ
-                </Link>
-              </div>
+            <div className="bg-accent bg-opacity-10 p-6 rounded-lg mt-8 mb-12">
+              <h3 className="text-xl font-bold mb-4 text-secondary-dark flex items-center">
+                <span className="material-icons text-primary mr-2">info</span>
+                保険診療に関する注意事項
+              </h3>
+              <ul className="list-disc list-inside space-y-2 text-gray-700">
+                <li>保険証は毎回ご持参ください</li>
+                <li>保険適用の治療は医師の指示に基づいて行われます</li>
+                <li>保険診療と自費診療を併用する場合は事前にご相談ください</li>
+                <li>交通事故の場合は自賠責保険の適用となります</li>
+              </ul>
+            </div>
+            <div className="text-center">
+              <Link href="/contact" className="inline-block bg-primary hover:bg-primary-dark text-white font-bold py-3 px-8 rounded-full transition duration-300 transform hover:-translate-y-1 flex items-center justify-center mx-auto" style={{ maxWidth: '400px' }}>
+                <span className="material-icons mr-2">calendar_today</span>
+                ご予約・お問い合わせ
+              </Link>
             </div>
           </div>
         </div>
@@ -313,4 +275,4 @@ const Insurance = () => {
   );
 };
 
-export default Insurance;
+export default Insurance; 

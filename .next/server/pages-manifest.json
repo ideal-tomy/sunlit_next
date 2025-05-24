@@ -2,9 +2,6 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/acupuncture": "pages/acupuncture.js",
-  "/private-treatment": "pages/private-treatment.js",
-  "/insurance": "pages/insurance.js",
-  "/instagram": "pages/instagram.js",
-  "/staff": "pages/staff.js"
+  "/contact": "pages/contact.js",
+  "/insurance": "pages/insurance.js"
 }
