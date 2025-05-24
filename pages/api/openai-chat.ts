@@ -1,4 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
+import { rules } from '../../lib/prompts/systemPrompt';
+import { seikotsuExamples } from '../../lib/prompts/examples_seikotsu_acupuncture';
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   if (req.method !== 'POST') {
@@ -18,6 +20,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
   try {
     console.log('[apiKey]', apiKey);
+    const systemPrompt = `${rules}\n\n【整骨・鍼灸の回答例】\n${seikotsuExamples}`;
+
     const response = await fetch('https://api.openai.com/v1/chat/completions', {
       method: 'POST',
       headers: {
@@ -27,7 +31,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       body: JSON.stringify({
         model: 'gpt-3.5-turbo',
         messages: [
-          { role: 'system', content: 'あなたは整骨院の受付AIです。丁寧に答えてください。' },
+          { role: 'system', content: systemPrompt },
           { role: 'user', content: query }
         ]
       })
