@@ -210,64 +210,61 @@ const Insurance = () => {
             </div>
 
             <div className="mb-12">
-              <h2 className="text-2xl font-bold mb-6 text-secondary-dark flex items-center">
+              <h2 className="text-2xl font-bold mb-6 text-secondary-dark flex items-center justify-center">
                 <span className="material-icons text-primary mr-2">timeline</span>
-                保険診療の流れ
+                診療の流れ
               </h2>
-              
-              <div className="relative">
-                <div className="absolute left-8 top-0 h-full w-1 bg-primary-light"></div>
-                
-                <div className="relative z-10 mb-8">
-                  <div className="flex items-start">
-                    <div className="bg-primary rounded-full text-white w-16 h-16 flex items-center justify-center mr-4 flex-shrink-0">
-                      <span className="material-icons text-2xl">assignment_ind</span>
-                    </div>
-                    <div className="bg-white p-4 rounded-lg shadow-sm border-l-4 border-primary flex-grow">
-                      <h3 className="text-xl font-bold mb-2 text-secondary-dark">1. 初診</h3>
-                      <p className="text-gray-700">保険証をご持参の上、受付で記入していただきます。症状の詳細や怪我時の状況を確認し、初回検査を行います。</p>
-                    </div>
+              <div className="flex flex-col md:flex-row md:justify-center md:items-stretch gap-8">
+                {/* ステップ1 */}
+                <div className="relative flex-1 bg-white rounded-2xl shadow-xl p-8 flex flex-col items-center transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl">
+                  <div className="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-3xl font-bold mb-4 shadow-lg">
+                    1
+                  </div>
+                  <span className="material-icons text-4xl text-primary mb-2">assignment_ind</span>
+                  <h3 className="text-xl font-bold mb-2 text-secondary-dark">初診・受付</h3>
+                  <p className="text-gray-700 text-center">保険証をご持参の上、受付で記入していただきます。症状の詳細や怪我時の状況を確認し、初回検査を行います。</p>
+                  {/* 矢印 */}
+                  <div className="hidden md:block absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-1/2">
+                    <span className="material-icons text-4xl text-primary">arrow_forward</span>
                   </div>
                 </div>
-                
-                <div className="relative z-10 mb-8">
-                  <div className="flex items-start">
-                    <div className="bg-primary rounded-full text-white w-16 h-16 flex items-center justify-center mr-4 flex-shrink-0">
-                      <span className="material-icons text-2xl">medical_services</span>
-                    </div>
-                    <div className="bg-white p-4 rounded-lg shadow-sm border-l-4 border-primary flex-grow">
-                      <h3 className="text-xl font-bold mb-2 text-secondary-dark">2. 治療</h3>
-                      <p className="text-gray-700">状態に応じた適切な治療を行います。保険適用の管理・電気治療や物理療法、必要に応じて鍼灸治療を組み合わせます。</p>
-                    </div>
+                {/* ステップ2 */}
+                <div className="relative flex-1 bg-white rounded-2xl shadow-xl p-8 flex flex-col items-center transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl">
+                  <div className="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-3xl font-bold mb-4 shadow-lg">
+                    2
+                  </div>
+                  <span className="material-icons text-4xl text-primary mb-2">medical_services</span>
+                  <h3 className="text-xl font-bold mb-2 text-secondary-dark">検査・診断</h3>
+                  <p className="text-gray-700 text-center">症状に応じた詳細な検査を行います。</p>
+                  <div className="hidden md:block absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-1/2">
+                    <span className="material-icons text-4xl text-primary">arrow_forward</span>
                   </div>
                 </div>
-                
-                <div className="relative z-10 mb-8">
-                  <div className="flex items-start">
-                    <div className="bg-primary rounded-full text-white w-16 h-16 flex items-center justify-center mr-4 flex-shrink-0">
-                      <span className="material-icons text-2xl">monitor_heart</span>
-                    </div>
-                    <div className="bg-white p-4 rounded-lg shadow-sm border-l-4 border-primary flex-grow">
-                      <h3 className="text-xl font-bold mb-2 text-secondary-dark">3. 経過観察</h3>
-                      <p className="text-gray-700">定期的な通院で回復状況を確認し、治療計画を必要に応じて調整します。週に1～2回の通院で軽快な回復を目指します。</p>
-                    </div>
+                {/* ステップ3 */}
+                <div className="relative flex-1 bg-white rounded-2xl shadow-xl p-8 flex flex-col items-center transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl">
+                  <div className="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-3xl font-bold mb-4 shadow-lg">
+                    3
+                  </div>
+                  <span className="material-icons text-4xl text-primary mb-2">monitor_heart</span>
+                  <h3 className="text-xl font-bold mb-2 text-secondary-dark">経過観察</h3>
+                  <p className="text-gray-700 text-center">定期的な通院で回復状況を確認し、治療計画を必要に応じて調整します。週に1～2回の通院で軽快な回復を目指します。</p>
+                  <div className="hidden md:block absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-1/2">
+                    <span className="material-icons text-4xl text-primary">arrow_forward</span>
                   </div>
                 </div>
-                
-                <div className="relative z-10 mb-8">
-                  <div className="flex items-start">
-                    <div className="bg-primary rounded-full text-white w-16 h-16 flex items-center justify-center mr-4 flex-shrink-0">
-                      <span className="material-icons text-2xl">check_circle</span>
-                    </div>
-                    <div className="bg-white p-4 rounded-lg shadow-sm border-l-4 border-primary flex-grow">
-                      <h3 className="text-xl font-bold mb-2 text-secondary-dark">4. 回復・終了</h3>
-                      <p className="text-gray-700">症状の改善を確認し、日常生活やスポーツ活動への復帰を支援します。必要に応じて再発防止のためのアドバイスも行います。</p>
-                    </div>
+                {/* ステップ4 */}
+                <div className="relative flex-1 bg-white rounded-2xl shadow-xl p-8 flex flex-col items-center transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl">
+                  <div className="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-3xl font-bold mb-4 shadow-lg">
+                    4
                   </div>
+                  <span className="material-icons text-4xl text-primary mb-2">check_circle</span>
+                  <h3 className="text-xl font-bold mb-2 text-secondary-dark">回復・終了</h3>
+                  <p className="text-gray-700 text-center">症状の改善を確認し、日常生活やスポーツ活動への復帰を支援します。必要に応じて再発防止のためのアドバイスも行います。</p>
                 </div>
               </div>
+            </div>
 
-              <div className="mb-6">
+            <div className="mb-6">
               <div className="bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-300 hover:shadow-xl hover:-translate-y-1">
                 <div className="bg-primary bg-opacity-10 p-3 flex items-center">
                   <span className="material-icons text-2xl text-primary mr-2">local_hospital</span>

@@ -12,216 +12,248 @@ const Acupuncture = () => {
           <h1 style={{ color: 'white', fontSize: '2rem', fontWeight: 'bold', textAlign: 'center' }}>鍼灸治療</h1>
         </div>
       </div>
-
-      {/* メインコンテンツ */}
-      <div className="container mx-auto px-4 py-12">
-        {/* 鍼灸治療の説明 */}
-        <div className="max-w-4xl mx-auto bg-white p-6 sm:p-8 rounded-lg shadow-sm mb-12">
-          <h2 className="text-2xl font-bold mb-6 text-secondary-dark text-center">サンリットウエストの鍼灸治療</h2>
-          
-          <div className="bg-accent bg-opacity-10 p-4 rounded-lg mb-6 border-l-4 border-primary">
-            <p className="text-lg text-gray-700">
-              東洋医学の考えに基づいた鍼灸治療で、身体の自然治癒力を高め、様々な症状の改善を目指します。
-              当院では、患者様一人ひとりの体質や症状に合わせたオーダーメイドの治療を提供しています。
-            </p>
-          </div>
-          
-          <p className="text-lg mb-4 text-gray-700">
-            鍼灸治療は、身体のツボに鍼やお灸で刺激を与えることで、気血の流れを整え、自然治癒力を高める治療法です。
-            痛みの緩和だけでなく、自律神経の調整や免疫力の向上など、様々な効果が期待できます。
-          </p>
-          <p className="text-lg mb-6 text-gray-700">
-            当院では、経験豊富な鍼灸師が、最新の医療知識と伝統的な東洋医学の知見を融合させた治療を行っています。
-            安全で効果的な治療を心がけ、患者様の健康と笑顔のために日々研鑽を重ねています。
-          </p>
-        </div>
-
-        {/* 治療メニュー */}
-        <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center text-secondary-dark">鍼灸治療メニュー</h2>
-        <div className="w-24 h-1 bg-primary mx-auto mb-12"></div>
-
-        <InfoCardGrid
-          menuGroups={[
-            {
-              title: '一般鍼灸',
-              icon: 'spa',
-              titleStyle: { backgroundColor: '#f9aa33', padding: '8px', borderRadius: '8px' },
-              iconStyle: { color: '#3377f9' },
-              items: [
-                {
-                  icon: 'spa',
-                  title: '一般鍼灸',
-                  hideTitle: true,
-                  hideIcon: true,
-                  price: '3,300円(税込)',
-                  duration: '30分',
-                  description: '肩こり、腰痛、頭痛など、様々な症状に対応した鍼灸治療を行います。',
-                  imageSrc: '/images/IMG_0352.jpg',
-                  imageAlt: '一般鍼灸'
-                }
-              ]
-            },
-            {
-              title: '美容鍼',
-              icon: 'face',
-              titleStyle: { backgroundColor: '#f9aa33', padding: '8px', borderRadius: '8px' },
-              iconStyle: { color: '#3377f9' },
-              items: [
-                {
-                  icon: 'face',
-                  title: '美容鍼',
-                  hideTitle: true,
-                  hideIcon: true,
-                  price: '5,500円(税込)',
-                  duration: '45分',
-                  description: 'お顔のツボに鍼を打ち、肌のハリやツヤを改善します。',
-                  imageSrc: '/images/02-01.png',
-                  imageAlt: '美容鍼'
-                }
-              ]
-            },
-            {
-              title: '小児はり',
-              icon: 'child_care',
-              titleStyle: { backgroundColor: '#f9aa33', padding: '8px', borderRadius: '8px' },
-              iconStyle: { color: '#3377f9' },
-              items: [
-                {
-                  icon: 'child_care',
-                  title: '小児はり',
-                  hideTitle: true,
-                  hideIcon: true,
-                  price: '2,200円(税込)',
-                  duration: '20分',
-                  description: 'お子様の夜泣き、かんの虫、食欲不振などに効果的な治療です。',
-                  imageSrc: '/images/02-01.png',
-                  imageAlt: '小児はり'
-                }
-              ]
-            },
-            {
-              title: '不妊治療',
-              icon: 'favorite',
-              titleStyle: { backgroundColor: '#f9aa33', padding: '8px', borderRadius: '8px' },
-              iconStyle: { color: '#3377f9' },
-              items: [
-                {
-                  icon: 'favorite',
-                  title: '不妊治療',
-                  hideTitle: true,
-                  hideIcon: true,
-                  price: '4,400円(税込)',
-                  duration: '40分',
-                  description: '妊娠しやすい体づくりをサポートする鍼灸治療を行います。',
-                  imageSrc: '/images/02-01.png',
-                  imageAlt: '不妊治療'
-                }
-              ]
-            }
-          ]}
-          columns={2}
-          gap="gap-6"
-          marginBottom="mb-8"
-        />
-
-        {/* 治療の流れ */}
-        <div className="mt-16 mb-12">
-          <h3 className="text-2xl font-bold mb-6 text-secondary-dark text-center">治療の流れ</h3>
-          
-          <div className="relative">
-            <div className="absolute left-8 top-0 h-full w-1 bg-primary-light"></div>
+      
+      <div className="py-12 px-4 sm:px-6 lg:px-8">
+        <div className="container mx-auto">
+          <div className="max-w-4xl mx-auto bg-white p-6 sm:p-8 rounded-lg shadow-sm mb-12">
+            <h2 className="text-2xl font-bold mb-6 text-secondary-dark text-center">サンリットウエストの鍼灸治療</h2>
             
-            <div className="relative z-10 mb-8">
-              <div className="flex items-start">
-                <div className="bg-primary rounded-full text-white w-16 h-16 flex items-center justify-center mr-4 flex-shrink-0">
-                  <span className="material-icons text-2xl">assignment_ind</span>
-                </div>
-                <div className="bg-white p-4 rounded-lg shadow-sm border-l-4 border-primary flex-grow">
-                  <h3 className="text-xl font-bold mb-2 text-secondary-dark">1. 問診</h3>
-                  <p className="text-gray-700">現在の症状や体調、生活習慣などを詳しくお伺いします。</p>
-                </div>
-              </div>
+            <div className="bg-accent bg-opacity-10 p-4 rounded-lg mb-6 border-l-4 border-primary">
+              <p className="text-lg text-gray-700">
+                <span className="font-bold text-primary">症状に合わせた完全オーダーメイド</span>の鍼灸治療で皆様のお悩みを改善致します。
+                慢性的な肩コリや、腰痛、自律神経失調、女性特有の悩み・更年期障害など、
+                様々な症状でお困りの方に対応いたします。
+              </p>
             </div>
             
-            <div className="relative z-10 mb-8">
-              <div className="flex items-start">
-                <div className="bg-primary rounded-full text-white w-16 h-16 flex items-center justify-center mr-4 flex-shrink-0">
-                  <span className="material-icons text-2xl">search</span>
-                </div>
-                <div className="bg-white p-4 rounded-lg shadow-sm border-l-4 border-primary flex-grow">
-                  <h3 className="text-xl font-bold mb-2 text-secondary-dark">2. 検査</h3>
-                  <p className="text-gray-700">脈診、腹診、舌診など、東洋医学的な診察を行います。</p>
-                </div>
-              </div>
-            </div>
+            <InfoCardGrid
+              items={[
+                {
+                  icon: 'person',
+                  title: '一人ひとりに合わせたアプローチ',
+                  description: '当院の鍼灸治療は様々な症状でお困りの方に一人一人違った形でアプローチをすることを心がけています。',
+                  bgColor: 'bg-white'
+                },
+                {
+                  icon: 'healing',
+                  title: '局所治療と全身治療',
+                  description: '当院の鍼灸治療はコリや疲れに対する局所治療は勘論ですが、気・血の滞りを改善する為の全身への経絡治療も行います。',
+                  bgColor: 'bg-secondary-light bg-opacity-10'
+                }
+              ]}
+              columns={2}
+              gap="gap-8 md:gap-16"
+              marginBottom="mb-8"
+            />
             
-            <div className="relative z-10 mb-8">
-              <div className="flex items-start">
-                <div className="bg-primary rounded-full text-white w-16 h-16 flex items-center justify-center mr-4 flex-shrink-0">
-                  <span className="material-icons text-2xl">medical_services</span>
-                </div>
-                <div className="bg-white p-4 rounded-lg shadow-sm border-l-4 border-primary flex-grow">
-                  <h3 className="text-xl font-bold mb-2 text-secondary-dark">3. 治療</h3>
-                  <p className="text-gray-700">症状に合わせた鍼灸治療を行います。痛みの少ない細い鍼を使用します。</p>
-                </div>
-              </div>
-            </div>
-            
-            <div className="relative z-10">
-              <div className="flex items-start">
-                <div className="bg-primary rounded-full text-white w-16 h-16 flex items-center justify-center mr-4 flex-shrink-0">
-                  <span className="material-icons text-2xl">chat</span>
-                </div>
-                <div className="bg-white p-4 rounded-lg shadow-sm border-l-4 border-primary flex-grow">
-                  <h3 className="text-xl font-bold mb-2 text-secondary-dark">4. アフターケア</h3>
-                  <p className="text-gray-700">治療後の注意点や、日常生活でのアドバイスをお伝えします。</p>
-                </div>
-              </div>
+            <div className="bg-secondary-light bg-opacity-10 p-4 rounded-lg border-l-4 border-secondary">
+              <h3 className="text-xl font-bold mb-2 text-secondary-dark">東洋医学の知恵</h3>
+              <p className="text-gray-700">
+                気・血は身体の中を絶えず巡っていますが、疲労や精神的なトラブルで巡りが悪くなることが多いです。
+                巡りが悪くなることで肩コリや頭痛、強い生理痛などを起こしてしまいます。
+                当院では<span className="font-bold text-secondary">気・血の流れを改善し根本的な不調を改善する</span>ことを心がけております。
+              </p>
             </div>
           </div>
-        </div>
-
-        {/* よくある質問 */}
-        <div className="mt-16 mb-12">
-          <h3 className="text-2xl font-bold mb-6 text-secondary-dark text-center">よくある質問</h3>
           
-          <div className="space-y-4">
-            <details className="bg-white p-4 rounded-lg shadow-sm cursor-pointer">
-              <summary className="font-medium text-secondary-dark text-lg">鍼灸治療は痛いですか？</summary>
-              <div className="mt-4 pl-4 text-gray-700">
-                <p>当院では、痛みの少ない細い鍼を使用しています。鍼を刺す際の痛みは、蚊に刺された程度の感覚です。また、患者様の体質や症状に合わせて、刺入の深さや角度を調整しますので、ご安心ください。</p>
-              </div>
-            </details>
-            
-            <details className="bg-white p-4 rounded-lg shadow-sm cursor-pointer">
-              <summary className="font-medium text-secondary-dark text-lg">治療の頻度はどのくらいですか？</summary>
-              <div className="mt-4 pl-4 text-gray-700">
-                <p>症状や体質によって異なりますが、一般的には週1〜2回の治療を2〜3週間続けることをお勧めしています。症状が改善してきたら、徐々に間隔を空けていきます。</p>
-              </div>
-            </details>
-            
-            <details className="bg-white p-4 rounded-lg shadow-sm cursor-pointer">
-              <summary className="font-medium text-secondary-dark text-lg">保険は使えますか？</summary>
-              <div className="mt-4 pl-4 text-gray-700">
-                <p>はい、保険適用の鍼灸治療も行っています。ただし、保険適用には医師の同意書が必要です。詳しくはお問い合わせください。</p>
-              </div>
-            </details>
-          </div>
-        </div>
+          <h1 className="text-3xl md:text-4xl font-bold mb-8 text-center text-secondary-dark">鍼灸メニュー</h1>
+          <p className="text-center text-lg mb-6 text-gray-700">東洋医学の知恵を取り入れた完全オーダーメイドの施術で症状を改善します</p>
+          <div className="w-24 h-1 bg-primary mx-auto mb-12"></div>
+          
+          {/* 鍼灸メニュー（2カラム横並び） */}
+            <InfoCardGrid
+              menuGroups={[
+                {
+                  title: '全身鍼灸メニュー',
+                  icon: 'healing',
+                  titleStyle: { backgroundColor: '#f9aa33', padding: '8px', borderRadius: '8px' },
+                  iconStyle: { color: '#3377f9' },
+                  items: [
+                    {
+                      icon: 'spa',
+                      title: '全身鍼灸',
+                      price: '¥6,900',
+                      initialPrice: '¥5,900',
+                      duration: '60分',
+                      description: '全身の経絡に沿って鍼灸治療を行い、身体全体のバランスを整えます。慢性的な疲れや様々な不調にお悩みの方におすすめです。',
+                      imageSrc: '/images/acupuncture01.jpg',
+                      imageAlt: '全身鍼灸',
+                      hideTitle: true,
+                      hideIcon: true
+                    }
+                  ]
+                },
+                {
+                  title: 'メンテナンス鍼灸メニュー',
+                  icon: 'healing',
+                  titleStyle: { backgroundColor: '#f9aa33', padding: '8px', borderRadius: '8px' },
+                  iconStyle: { color: '#3377f9' },
+                  items: [
+                    {
+                      icon: 'spa',
+                      title: 'メンテナンス鍼灸',
+                      price: '¥4,600',
+                      initialPrice: '¥4,100',
+                      duration: '30分',
+                      description: '定期的なメンテナンスとして、気になる部分を重点的に施術します。忙しい方や部分的な不調にお悩みの方に最適です。',
+                      imageSrc: '/images/IMG_0042.jpg',
+                      imageAlt: 'メンテナンス鍼灸',
+                      hideTitle: true,
+                      hideIcon: true
+                    }
+                  ]
+                }
+              ]}
+              columns={2}
+              gap="gap-8 md:gap-16"
+              marginBottom="mb-12"
+            />
 
-        {/* お問い合わせセクション */}
-        <div className="bg-accent p-8 rounded-lg shadow-md text-center">
-          <h2 className="text-2xl font-bold mb-4 text-secondary-dark">お問い合わせ</h2>
-          <p className="text-lg mb-6 text-gray-700">
-            鍼灸治療についてのご質問やご予約は、お気軽にお問い合わせください。
-            経験豊富なスタッフが丁寧にご対応いたします。
-          </p>
-          <a 
-            href="/contact" 
-            className="bg-primary hover:bg-primary-dark text-white px-6 py-3 rounded-md transition-colors duration-300 font-medium inline-block"
-          >
-            お問い合わせはこちら
-          </a>
+            {/* 部分鍼灸・マッサージ */}
+            
+            <OneColumnCard
+              menuGroups={[
+                {
+                  title: '部分鍼灸・マッサージ',
+                  icon: 'healing',
+                  titleStyle: { backgroundColor: '#f9aa33', padding: '8px', borderRadius: '8px' },
+                  iconStyle: { color: '#3377f9' },
+                  items: [
+                    {
+                      icon: 'attach_money',
+                      title: '料金・所要時間',
+                      price: '¥700〜',
+                      duration: '症状に応じて',
+                      description: '症状に合わせた治療法を提供します。肩こり、腰痛、頭痛など特定の部位の不調に効果的です。',
+                      imageSrc: '/images/02-01.png',
+                      imageAlt: '部分鍵灸・マッサージ',
+                      hideIcon: true
+                    }
+                  ]
+                }
+              ]}
+              gap="gap-8"
+              marginBottom="mb-6"
+            />
+
+            <div className="mb-12 bg-white p-6 rounded-lg shadow-lg">
+              <h2 className="text-2xl font-bold mb-4 text-secondary-dark border-b-2 border-primary pb-2 flex items-center justify-center">
+                <span className="material-icons mr-2 text-primary">spa</span>
+                美容鍼
+              </h2>
+              
+              <div className="mb-6">
+                <div className="bg-white p-4 rounded-lg mb-6 shadow-sm">
+                  <p className="text-lg text-gray-700">
+                    今話題の美容鍼メニューも御座います。
+                    美容鍼で大きく得られる効果は以下の3つです：
+                  </p>
+                  
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+                    <div className="relative overflow-hidden rounded-xl shadow-lg transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1 h-64">
+                      <div className="h-full w-full" style={{ backgroundImage: 'url(/images/IMG_0116.jpg)', backgroundSize: 'cover', backgroundPosition: 'center', filter: 'brightness(0.7)' }}></div>
+                      <div className="absolute inset-0 flex flex-col justify-center items-center p-4">
+                        <h3 className="text-3xl font-bold text-white mb-2 drop-shadow-lg">リフトアップ効果</h3>
+                        <p className="text-xl text-white font-medium drop-shadow-md">たるみやシワの改善</p>
+                      </div>
+                    </div>
+                    <div className="relative overflow-hidden rounded-xl shadow-lg transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1 h-64">
+                      <div className="h-full w-full" style={{ backgroundImage: 'url(/images/IMG_0116.jpg)', backgroundSize: 'cover', backgroundPosition: 'center', filter: 'brightness(0.7)' }}></div>
+                      <div className="absolute inset-0 flex flex-col justify-center items-center p-4">
+                        <h3 className="text-3xl font-bold text-white mb-2 drop-shadow-lg">肌質改善</h3>
+                        <p className="text-xl text-white font-medium drop-shadow-md">ハリや強度の向上</p>
+                      </div>
+                    </div>
+                    <div className="relative overflow-hidden rounded-xl shadow-lg transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1 h-64">
+                      <div className="h-full w-full" style={{ backgroundImage: 'url(/images/IMG_0158.jpg)', backgroundSize: 'cover', backgroundPosition: 'center', filter: 'brightness(0.7)' }}></div>
+                      <div className="absolute inset-0 flex flex-col justify-center items-center p-4">
+                        <h3 className="text-3xl font-bold text-white mb-2 drop-shadow-lg">小顔効果</h3>
+                        <p className="text-xl text-white font-medium drop-shadow-md">顔の輪郭が引き締まり</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <InfoCardGrid
+                  items={[
+                    {
+                      icon: 'science',
+                      title: '美容鍼の仕組み',
+                      description: '鍼を打つことでお顔に小さな傷が出来ます。傷がつくことで【線維芽細胞】が働き傷を修復します。傷を修復する時に自身の肥細胞が新しくなるため肥質の改善に繋がります。',
+                      bgColor: 'bg-white'
+                    },
+                    {
+                      icon: 'favorite',
+                      title: '血流改善の効果',
+                      description: '鍼を打つことで血流の改善がみられ固まった表情筋が柔らかくなり、重たい老廃物も流れるため術後すぐに引きあがった実感を得られます。',
+                      bgColor: 'bg-secondary-light bg-opacity-10'
+                    }
+                  ]}
+                  columns={2}
+                  gap="gap-8 md:gap-16"
+                  marginBottom="mb-8"
+                />
+                
+                <div className="bg-accent bg-opacity-10 p-4 rounded-lg border-l-4 border-accent">
+                  <h3 className="flex items-center text-xl font-bold mb-2 text-secondary-dark">
+                    <span className="material-icons mr-2 text-accent">info</span>
+                    安心して受けていただけます
+                  </h3>
+                  <p className="text-gray-700">
+                    お顔に鍼を打つことの恐怖心もあると思いますが、鍼はとても細く柔らかい鍼を使用するので心配はいりません。心地よい刺激で眠ってしまう方も多いので安心して受けてください。
+                    施術前にお肌の状態や体調面などもカウンセリングいたしますのでご安心ください。
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <InfoCardGrid
+              menuGroups={[
+                {
+                  title: '美容鍼（40分）',
+                  icon: 'healing',
+                  titleStyle: { backgroundColor: '#f9aa33', padding: '8px', borderRadius: '8px' },
+                  iconStyle: { color: '#3377f9' },
+                  items: [
+                    {
+                      icon: 'spa',
+                      title: '美容鍼',
+                      price: '¥5,700',
+                      initialPrice: '¥5,200',
+                      duration: '40分',
+                      description: 'お顔のたるみやシワ、くすみなどにアプローチ。リフトアップ効果と磁気改善が期待できます。',
+                      imageSrc: '/images/IMG_0116.jpg',
+                      imageAlt: '美容鍼',
+                      hideTitle: true,
+                      hideIcon: true
+                    }
+                  ]
+                },
+                {
+                  title: 'プラチナ美容鍼（60分）',
+                  icon: 'healing',
+                  titleStyle: { backgroundColor: '#f9aa33', padding: '8px', borderRadius: '8px' },
+                  iconStyle: { color: '#3377f9' },
+                  items: [
+                    {
+                      icon: 'spa',
+                      title: 'プラチナ美容鍼',
+                      price: '¥7,800',
+                      initialPrice: '¥6,800',
+                      duration: '60分',
+                      description: '標準コースに加え、首・肩・デコルテのケアや特殊マッサージを含む超贐沃コース。',
+                      imageSrc: '/images/05.png',
+                      imageAlt: 'プラチナ美容鍼',
+                      hideTitle: true,
+                      hideIcon: true
+                    }
+                  ]
+                }
+              ]}
+              columns={2}
+              gap="gap-8 md:gap-16"
+              marginBottom="mb-12"
+            />
         </div>
       </div>
     </div>
