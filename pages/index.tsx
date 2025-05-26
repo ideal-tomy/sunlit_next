@@ -61,7 +61,7 @@ const Home = () => {
       <div style={{ position: 'relative', height: '100vh', minHeight: '600px' }}>
         <img src="/images/01.png" width="100%" height="100%" alt="ヒーロー画像" style={{ objectFit: 'cover', position: 'absolute', top: 0, left: 0 }} />
         <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, backgroundColor: 'rgba(0,0,0,0.3)', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '0 1rem' }}>
-          <h1 style={{ color: 'white', fontSize: '2.5rem', fontWeight: 'bold', textAlign: 'center', marginBottom: '1rem' }}>サンリットウエスト鍼灸整骨院<br />100年使う大切な身体だからこそ</h1>
+          <h1 style={{ color: 'white', fontSize: '2.5rem', fontWeight: 'bold', textAlign: 'center', marginBottom: '1rem' }}>サンリットウエスト鍼灸整骨院</h1>
           <p style={{ color: 'white', fontSize: '1.2rem', textAlign: 'center', maxWidth: '36rem', marginBottom: '2rem' }}>— 100年使う大切な身体だからこそ、定期的なメンテナンスで痛みの少ない毎日を過ごしませんか。 —</p>
           <Link 
             href="#contact" 

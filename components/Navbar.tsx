@@ -120,6 +120,7 @@ const Navbar = () => {
                 key={item.path}
                 href={item.path}
                 className="text-gray-800 hover:text-primary transition-colors duration-300 font-medium py-2"
+                onClick={() => setIsOpen(false)}
               >
                 {item.name}
               </Link>
