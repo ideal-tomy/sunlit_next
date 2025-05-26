@@ -34,7 +34,7 @@ const Staff = () => {
                 <div className="md:w-1/2">
                   <img 
                     src="/images/staff01.jpeg" 
-                    alt="院長 落合竹一" 
+                    alt="院長 落合竜一" 
                     className="w-full h-auto rounded-lg shadow-md"
                   />
                 </div>
