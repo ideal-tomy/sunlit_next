@@ -57,15 +57,34 @@ const Home = () => {
   };
 
   return (
-    <div className="home-page">
-      <div style={{ position: 'relative', height: '100vh', minHeight: '600px' }}>
-        <img src="/images/01.png" width="100%" height="100%" alt="ヒーロー画像" style={{ objectFit: 'cover', position: 'absolute', top: 0, left: 0 }} />
-        <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, backgroundColor: 'rgba(0,0,0,0.3)', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '0 1rem' }}>
-          <h1 style={{ color: 'white', fontSize: '2.5rem', fontWeight: 'bold', textAlign: 'center', marginBottom: '1rem' }}>サンリットウエスト鍼灸整骨院</h1>
-          <p style={{ color: 'white', fontSize: '1.2rem', textAlign: 'center', maxWidth: '36rem', marginBottom: '2rem' }}>— 100年使う大切な身体だからこそ、定期的なメンテナンスで痛みの少ない毎日を過ごしませんか。 —</p>
+    <div className="home-page min-h-screen bg-white flex flex-col">
+      <div className="relative w-full aspect-[16/9] pt-[72px]">
+        <img
+          src="/images/01.png"
+          alt="ヒーロー画像"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/30 p-4">
+          <h1
+            className="hidden md:block"
+            style={{ color: 'white', fontSize: '2.5rem', fontWeight: 'bold', textAlign: 'center', marginBottom: '1rem' }}
+          >
+            サンリットウエスト鍼灸整骨院
+          </h1>
+          <p
+            className="text-sm md:text-base"
+            style={{ color: 'white', textAlign: 'center', maxWidth: '36rem', marginBottom: '2rem' }}
+          >
+            <span className="block md:hidden">
+              100年使う身体を、定期的なメンテナンスでサポート。
+            </span>
+            <span className="hidden md:block">
+              — 100年使う大切な身体だからこそ、定期的なメンテナンスで痛みの少ない毎日を過ごしませんか。 —
+            </span>
+          </p>
           <Link 
             href="#contact" 
-            className="bg-primary hover:bg-primary-dark text-white px-6 py-3 rounded-md transition-colors duration-300 font-medium inline-block"
+            className="hidden md:inline-block bg-primary hover:bg-primary-dark text-white px-6 py-3 rounded-md transition-colors duration-300 font-medium"
           >
             ご予約はこちら
           </Link>
