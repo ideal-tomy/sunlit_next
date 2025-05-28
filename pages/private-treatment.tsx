@@ -113,7 +113,7 @@ const PrivateTreatment = () => {
                     price: '¥3,600',
                     duration: '30分',
                     description: '足裏の反射区を刷激し、全身の血行促進や疲労回復を促します。むくみや冷え性の改善にも効果的です。',
-                    imageSrc: '/images/IMG_0042.jpg',
+                    imageSrc: '/images/02-01.png',
                     imageAlt: '足裏ケア'
                   }
                 ]
@@ -151,7 +151,7 @@ const PrivateTreatment = () => {
                     price: '¥2,800',
                     duration: '30分',
                     description: '一般的な吸い玉法ではなく、筋肉や経絡に置くことでモビリティの向上や痛みの減少を目指す法です。',
-                    imageSrc: '/images/IMG_0116.jpg',
+                    imageSrc: '/images/02-01.png',
                     imageAlt: 'ファンクショナルカッピング'
                   }
                 ]

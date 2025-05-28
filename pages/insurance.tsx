@@ -157,51 +157,51 @@ const Insurance = () => {
               </h2>
               <div className="max-w-4xl mx-auto">
                 <ul className="space-y-8">
-                  <li className="flex flex-col md:flex-row items-start md:items-center gap-2 md:gap-8">
-                    <div className="flex flex-row items-center gap-2 md:flex-col md:gap-0 justify-center w-full">
+                  <li className="flex flex-col gap-2 md:grid md:grid-cols-[auto_auto_1fr] md:items-start md:gap-4">
+                    <div className="flex items-center gap-2 self-center">
                       <div className="w-14 h-14 bg-blue-500 text-white rounded-full flex items-center justify-center text-2xl font-bold flex-shrink-0">1</div>
-                      <div className="w-28 h-14 flex flex-col items-center justify-center bg-blue-700 text-white font-bold rounded-full shadow text-sm leading-tight ml-2 md:ml-0 md:mt-2">
+                      <div className="w-28 h-14 flex flex-col items-center justify-center bg-blue-700 text-white font-bold rounded-full shadow text-sm leading-tight">
                         <span className="fancy-underline">初診</span>
                         <span className="fancy-underline mt-1">受付</span>
                       </div>
                     </div>
-                    <div className="flex-1 w-full max-w-2xl bg-white shadow px-6 py-4 rounded border-l-4 border-blue-500 text-gray-900 text-base md:text-lg mt-2 md:mt-0">
+                    <div className="flex-1 w-full max-w-2xl bg-white shadow px-6 py-4 rounded border-l-4 border-blue-500 text-gray-900 text-base md:text-lg">
                       保険証をご持参の上、受付で記入していただきます。症状の詳細や怪我時の状況を確認し、初回検査を行います。
                     </div>
                   </li>
-                  <li className="flex flex-col md:flex-row items-start md:items-center gap-2 md:gap-8">
-                    <div className="flex flex-row items-center gap-2 md:flex-col md:gap-0 justify-center w-full">
+                  <li className="flex flex-col gap-2 md:grid md:grid-cols-[auto_auto_1fr] md:items-start md:gap-4">
+                    <div className="flex items-center gap-2 self-center">
                       <div className="w-14 h-14 bg-blue-500 text-white rounded-full flex items-center justify-center text-2xl font-bold flex-shrink-0">2</div>
-                      <div className="w-28 h-14 flex flex-col items-center justify-center bg-blue-700 text-white font-bold rounded-full shadow text-sm leading-tight ml-2 md:ml-0 md:mt-2">
+                      <div className="w-28 h-14 flex flex-col items-center justify-center bg-blue-700 text-white font-bold rounded-full shadow text-sm leading-tight">
                         <span className="fancy-underline">検査</span>
                         <span className="fancy-underline mt-1">診断</span>
                       </div>
                     </div>
-                    <div className="flex-1 w-full max-w-2xl bg-white shadow px-6 py-4 rounded border-l-4 border-blue-500 text-gray-900 text-base md:text-lg mt-2 md:mt-0">
+                    <div className="flex-1 w-full max-w-2xl bg-white shadow px-6 py-4 rounded border-l-4 border-blue-500 text-gray-900 text-base md:text-lg">
                       症状に応じた詳細な検査を行います。具体的には徒手検査や姿勢・可動域のチェック、姿勢や歩行チェックなどを行います。
                     </div>
                   </li>
-                  <li className="flex flex-col md:flex-row items-start md:items-center gap-2 md:gap-8">
-                    <div className="flex flex-row items-center gap-2 md:flex-col md:gap-0 justify-center w-full">
+                  <li className="flex flex-col gap-2 md:grid md:grid-cols-[auto_auto_1fr] md:items-start md:gap-4">
+                    <div className="flex items-center gap-2 self-center">
                       <div className="w-14 h-14 bg-blue-500 text-white rounded-full flex items-center justify-center text-2xl font-bold flex-shrink-0">3</div>
-                      <div className="w-28 h-14 flex flex-col items-center justify-center bg-blue-700 text-white font-bold rounded-full shadow text-sm leading-tight ml-2 md:ml-0 md:mt-2">
+                      <div className="w-28 h-14 flex flex-col items-center justify-center bg-blue-700 text-white font-bold rounded-full shadow text-sm leading-tight">
                         <span className="fancy-underline">経過</span>
                         <span className="fancy-underline mt-1">観察</span>
                       </div>
                     </div>
-                    <div className="flex-1 w-full max-w-2xl bg-white shadow px-6 py-4 rounded border-l-4 border-blue-500 text-gray-900 text-base md:text-lg mt-2 md:mt-0">
+                    <div className="flex-1 w-full max-w-2xl bg-white shadow px-6 py-4 rounded border-l-4 border-blue-500 text-gray-900 text-base md:text-lg">
                       定期的な通院で回復状況を確認し、治療計画を必要に応じて調整します。週に1～2回の通院で軽快な回復を目指します。
                     </div>
                   </li>
-                  <li className="flex flex-col md:flex-row items-start md:items-center gap-2 md:gap-8">
-                    <div className="flex flex-row items-center gap-2 md:flex-col md:gap-0 justify-center w-full">
+                  <li className="flex flex-col gap-2 md:grid md:grid-cols-[auto_auto_1fr] md:items-start md:gap-4">
+                    <div className="flex items-center gap-2 self-center">
                       <div className="w-14 h-14 bg-blue-500 text-white rounded-full flex items-center justify-center text-2xl font-bold flex-shrink-0">4</div>
-                      <div className="w-28 h-14 flex flex-col items-center justify-center bg-blue-700 text-white font-bold rounded-full shadow text-sm leading-tight ml-2 md:ml-0 md:mt-2">
+                      <div className="w-28 h-14 flex flex-col items-center justify-center bg-blue-700 text-white font-bold rounded-full shadow text-sm leading-tight">
                         <span className="fancy-underline">回復</span>
                         <span className="fancy-underline mt-1">終了</span>
                       </div>
                     </div>
-                    <div className="flex-1 w-full max-w-2xl bg-white shadow px-6 py-4 rounded border-l-4 border-blue-500 text-gray-900 text-base md:text-lg mt-2 md:mt-0">
+                    <div className="flex-1 w-full max-w-2xl bg-white shadow px-6 py-4 rounded border-l-4 border-blue-500 text-gray-900 text-base md:text-lg">
                       症状の改善を確認し、日常生活やスポーツ活動への復帰を支援します。必要に応じて再発防止のためのアドバイスも行います。
                     </div>
                   </li>

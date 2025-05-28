@@ -193,7 +193,7 @@ const Home = () => {
               <Link href="/staff" className="block h-full">
                 <div className="relative h-64 overflow-hidden">
                   <img 
-                    src="./images/staff04.jpg" 
+                    src="./images/topstaff.jpg" 
                     alt="スタッフ紹介" 
                     className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                   />
@@ -334,7 +334,7 @@ const Home = () => {
             </div>
             
             <div className="bg-accent p-8 rounded-lg shadow-md text-center">
-              <h3 className="text-2xl font-bold mb-4 text-secondary-dark">ブログ</h3>
+              <h3 className="text-2xl font-bold mb-4 text-secondary-dark">インスタグラム</h3>
               <p className="text-lg mb-6 text-gray-700">
                 健康に関する情報や、当院からのお知らせを定期的に更新しています。
               </p>

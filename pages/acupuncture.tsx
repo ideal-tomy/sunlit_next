@@ -70,7 +70,7 @@ const Acupuncture = () => {
                       initialPrice: '¥5,900',
                       duration: '60分',
                       description: '全身の経絡に沿って鍼灸治療を行い、身体全体のバランスを整えます。慢性的な疲れや様々な不調にお悩みの方におすすめです。',
-                      imageSrc: '/images/acupuncture01.jpg',
+                      imageSrc: '/images/fillbody.jpg',
                       imageAlt: '全身鍼灸'
                     }
                   ]
@@ -84,7 +84,7 @@ const Acupuncture = () => {
                       initialPrice: '¥4,100',
                       duration: '30分',
                       description: '定期的なメンテナンスとして、気になる部分を重点的に施術します。忙しい方や部分的な不調にお悩みの方に最適です。',
-                      imageSrc: '/images/IMG_0042.jpg',
+                      imageSrc: '/images/mente.jpg',
                       imageAlt: 'メンテナンス鍼灸'
                     }
                   ]

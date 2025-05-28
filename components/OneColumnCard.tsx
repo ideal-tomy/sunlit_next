@@ -47,9 +47,9 @@ const OneColumnCard: React.FC<OneColumnCardProps> = ({
         </div>
         
         <div className="mb-4 text-center bg-gradient-to-r from-primary-light to-primary-light bg-opacity-10 py-3 px-4 rounded-lg">
-          <p className="text-3xl font-bold text-primary">{item.price}<span className="text-sm text-gray-600 ml-1">(税込)</span></p>
+          <p className="text-3xl font-bold text-primary text-outline-black">{item.price}<span className="text-sm text-primary ml-1 text-outline-black">(税込)</span></p>
           {item.initialPrice && (
-            <p className="text-lg font-medium text-accent mt-2">初回 {item.initialPrice}</p>
+            <p className="text-lg font-medium text-primary mt-2 text-outline-black">初回 {item.initialPrice}</p>
           )}
           <p className="text-gray-700 mt-2 font-medium">所要時間：{item.duration}</p>
         </div>
