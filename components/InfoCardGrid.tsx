@@ -79,8 +79,7 @@ const InfoCardGrid: React.FC<InfoCardGridProps> = ({
             <img 
               src={item.imageSrc} 
               alt={item.imageAlt || item.title} 
-              className="rounded-lg shadow-sm max-w-full h-auto" 
-              style={{ maxWidth: '450px', maxHeight: '320px' }} 
+              className="rounded-lg shadow-sm w-full h-56 object-cover"
             />
           </div>
         )}

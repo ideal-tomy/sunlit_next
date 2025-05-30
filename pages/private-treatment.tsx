@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import InfoCardGrid from '../components/InfoCardGrid';
 import OneColumnCard from '../components/OneColumnCard';
+import ImageAspectRatioTest from '../components/ImageAspectRatioTest';
 
 const PrivateTreatment = () => {
   return (
@@ -184,6 +185,10 @@ const PrivateTreatment = () => {
               <li>状態や症状により、施術時間や内容が変更になる場合があります。</li>
               <li>ご予約の変更・キャンセルは、前日までにご連絡ください。</li>
             </ul>
+          </div>
+
+          <div className="my-12">
+            <ImageAspectRatioTest />
           </div>
 
           <div className="text-center mb-12">

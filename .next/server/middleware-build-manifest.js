@@ -24,10 +24,10 @@ self.__BUILD_MANIFEST = {
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/private-treatment": [
+    "/acupuncture": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/private-treatment.js"
+      "static/chunks/pages/acupuncture.js"
     ]
   },
   "ampFirstPages": []

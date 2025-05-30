@@ -57,12 +57,13 @@ const OneColumnCard: React.FC<OneColumnCardProps> = ({
         <p className="text-gray-700 leading-relaxed mb-6 text-center text-lg">{item.description}</p>
         
         {item.imageSrc && (
-          <div className="flex justify-center mt-3 mb-2">
+          <div 
+            className="relative w-full max-w-[600px] mx-auto mt-3 mb-2 aspect-video overflow-hidden rounded-lg shadow-sm"
+          >
             <img 
               src={item.imageSrc} 
               alt={item.imageAlt || item.title} 
-              className="rounded-lg shadow-sm max-w-full h-auto" 
-              style={{ maxWidth: '450px', maxHeight: '320px' }} 
+              className="absolute inset-0 w-full h-full object-cover"
             />
           </div>
         )}
@@ -79,7 +80,7 @@ const OneColumnCard: React.FC<OneColumnCardProps> = ({
       <div className="flex items-center justify-center mb-6 pb-3 border-b border-primary rounded-lg p-2">
         <h2 className="text-3xl font-bold text-secondary-dark">{group.title}</h2>
       </div>
-      <div className="flex flex-col h-full">
+      <div className="flex flex-col self-start">
         {group.items.map((item, idx) => renderMenuItem(item, index + "-" + idx))}
       </div>
     </div>
