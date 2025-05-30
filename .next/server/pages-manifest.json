@@ -2,8 +2,5 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/private-treatment": "pages/private-treatment.js",
-  "/contact": "pages/contact.js",
-  "/insurance": "pages/insurance.js",
-  "/acupuncture": "pages/acupuncture.js"
+  "/": "pages/index.js"
 }
