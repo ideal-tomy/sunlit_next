@@ -221,7 +221,7 @@ const Home = () => {
           <div className="flex flex-col md:flex-row items-center">
             <div className="md:w-1/2 mb-8 md:mb-0 md:pr-8">
               <img 
-                src="./images/02-01.png" 
+                src="./images/vision.jpg" 
                 alt="治療理念" 
                 className="rounded-lg shadow-xl w-full h-auto"
               />

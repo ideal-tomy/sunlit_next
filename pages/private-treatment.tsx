@@ -113,7 +113,7 @@ const PrivateTreatment = () => {
                     price: '¥3,600',
                     duration: '30分',
                     description: '足裏の反射区を刷激し、全身の血行促進や疲労回復を促します。むくみや冷え性の改善にも効果的です。',
-                    imageSrc: '/images/02-01.png',
+                    imageSrc: '/images/ashiura.jpg',
                     imageAlt: '足裏ケア'
                   }
                 ]
@@ -126,7 +126,7 @@ const PrivateTreatment = () => {
                     price: '¥3,600',
                     duration: '30分',
                     description: '目の周りや頭部の締張をほぐし、眼精疲労や頭痛の緩和を目指します。デスクワークやスマホ使用が多い方におすすめです。',
-                    imageSrc: '/images/02-01.png',
+                    imageSrc: '/images/eye.jpg',
                     imageAlt: '眼精疲労ケア'
                   }
                 ]
@@ -151,7 +151,7 @@ const PrivateTreatment = () => {
                     price: '¥2,800',
                     duration: '30分',
                     description: '一般的な吸い玉法ではなく、筋肉や経絡に置くことでモビリティの向上や痛みの減少を目指す法です。',
-                    imageSrc: '/images/02-01.png',
+                    imageSrc: '/images/IMG_0042.jpg',
                     imageAlt: 'ファンクショナルカッピング'
                   }
                 ]
@@ -164,7 +164,7 @@ const PrivateTreatment = () => {
                     price: '¥1,900',
                     duration: '15分',
                     description: '手や腕の疲れをほぐし、血行を促進します。スマホやパソコン操作で手や腕に疲れを感じる方におすすめです。',
-                    imageSrc: '/images/02-01.png',
+                    imageSrc: '/images/hand.jpg',
                     imageAlt: '極上ハンドケア'
                   }
                 ]
