@@ -63,11 +63,17 @@ const Contact = () => {
 
   return (
     <div className="page-container">
-      {/* ヒーローセクション - インラインスタイル実装 */}
-      <div style={{ position: 'relative', height: '320px', overflow: 'hidden' }}>
-        <img src="/images/test.jpg" alt="お問い合わせ" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
-        <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, backgroundColor: 'rgba(0,0,0,0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-          <h1 style={{ color: 'white', fontSize: '2rem', fontWeight: 'bold', textAlign: 'center' }}>お問い合わせ</h1>
+      {/* ヒーローセクション - Tailwind CSSベースに修正 */}
+      <div className="relative w-full aspect-[16/9] pt-[72px]">
+        <img
+          src="/images/01.png"
+          alt="お問い合わせ"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/30 p-4">
+          <h1 className="text-white text-2xl md:text-3xl font-bold text-center">
+            お問い合わせ
+          </h1>
         </div>
       </div>
       

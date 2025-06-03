@@ -5,11 +5,17 @@ import OneColumnCard from '../components/OneColumnCard';
 const Acupuncture = () => {
   return (
     <div className="page-container">
-      {/* ヒーローセクション - imgタグで実装 */}
-      <div style={{ position: 'relative', height: '320px', overflow: 'hidden' }}>
-        <img src="/images/test.jpg" alt="鍼灸治療" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
-        <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, backgroundColor: 'rgba(0,0,0,0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-          <h1 style={{ color: 'white', fontSize: '2rem', fontWeight: 'bold', textAlign: 'center' }}>鍼灸治療</h1>
+      {/* ヒーローセクション - Tailwind CSSベースに修正 */}
+      <div className="relative w-full aspect-[16/9] pt-[72px]">
+        <img
+          src="/images/01.png"
+          alt="鍼灸治療"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/30 p-4">
+          <h1 className="text-white text-2xl md:text-3xl font-bold text-center">
+            鍼灸治療
+          </h1>
         </div>
       </div>
       
@@ -95,6 +101,8 @@ const Acupuncture = () => {
               marginBottom="mb-12"
             />
 
+
+
             {/* 部分鍼灸・マッサージ */}
             
             <OneColumnCard
@@ -118,7 +126,7 @@ const Acupuncture = () => {
             />
 
             <div className="mb-12 bg-white p-6 rounded-lg shadow-lg">
-              <h2 className="text-2xl font-bold mb-4 text-secondary-dark border-b-2 border-primary pb-2 flex items-center justify-center">
+              <h2 className="text-[30px] font-bold mb-4 text-secondary-dark border-b-2 border-primary pb-2 flex items-center justify-center">
                 美容鍼
               </h2>
               
@@ -130,47 +138,38 @@ const Acupuncture = () => {
                   </p>
                   
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
-                    <div className="relative overflow-hidden rounded-xl shadow-lg transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1 h-64">
-                      <div className="h-full w-full" style={{ backgroundImage: 'url(/images/IMG_0116.jpg)', backgroundSize: 'cover', backgroundPosition: 'center', filter: 'brightness(0.7)' }}></div>
-                      <div className="absolute inset-0 flex flex-col justify-center items-center p-4">
-                        <h3 className="text-3xl font-bold text-white mb-2 drop-shadow-lg">リフトアップ効果</h3>
-                        <p className="text-xl text-white font-medium drop-shadow-md">たるみやシワの改善</p>
-                      </div>
+                    <div className="bg-white overflow-hidden rounded-xl shadow-lg transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1 p-6 flex flex-col justify-center items-center text-center h-64">
+                      <h3 className="text-3xl font-bold text-secondary-dark mb-2">リフトアップ効果</h3>
+                      <p className="text-xl text-gray-700 font-medium">たるみやシワの改善</p>
                     </div>
-                    <div className="relative overflow-hidden rounded-xl shadow-lg transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1 h-64">
-                      <div className="h-full w-full" style={{ backgroundImage: 'url(/images/IMG_0116.jpg)', backgroundSize: 'cover', backgroundPosition: 'center', filter: 'brightness(0.7)' }}></div>
-                      <div className="absolute inset-0 flex flex-col justify-center items-center p-4">
-                        <h3 className="text-3xl font-bold text-white mb-2 drop-shadow-lg">肌質改善</h3>
-                        <p className="text-xl text-white font-medium drop-shadow-md">ハリや強度の向上</p>
-                      </div>
+                    <div className="bg-white overflow-hidden rounded-xl shadow-lg transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1 p-6 flex flex-col justify-center items-center text-center h-64">
+                      <h3 className="text-3xl font-bold text-secondary-dark mb-2">肌質改善</h3>
+                      <p className="text-xl text-gray-700 font-medium">ハリや強度の向上</p>
                     </div>
-                    <div className="relative overflow-hidden rounded-xl shadow-lg transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1 h-64">
-                      <div className="h-full w-full" style={{ backgroundImage: 'url(/images/IMG_0158.jpg)', backgroundSize: 'cover', backgroundPosition: 'center', filter: 'brightness(0.7)' }}></div>
-                      <div className="absolute inset-0 flex flex-col justify-center items-center p-4">
-                        <h3 className="text-3xl font-bold text-white mb-2 drop-shadow-lg">小顔効果</h3>
-                        <p className="text-xl text-white font-medium drop-shadow-md">顔の輪郭が引き締まり</p>
-                      </div>
+                    <div className="bg-white overflow-hidden rounded-xl shadow-lg transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1 p-6 flex flex-col justify-center items-center text-center h-64">
+                      <h3 className="text-3xl font-bold text-secondary-dark mb-2">小顔効果</h3>
+                      <p className="text-xl text-gray-700 font-medium">顔の輪郭が引き締まり</p>
                     </div>
                   </div>
                 </div>
                 
-                <InfoCardGrid
-                  items={[
-                    {
-                      title: '美容鍼の仕組み',
-                      description: '鍼を打つことでお顔に小さな傷が出来ます。傷がつくことで【線維芽細胞】が働き傷を修復します。傷を修復する時に自身の肥細胞が新しくなるため肥質の改善に繋がります。',
-                      bgColor: 'bg-white'
-                    },
-                    {
-                      title: '血流改善の効果',
-                      description: '鍼を打つことで血流の改善がみられ固まった表情筋が柔らかくなり、重たい老廃物も流れるため術後すぐに引きあがった実感を得られます。',
-                      bgColor: 'bg-secondary-light bg-opacity-10'
-                    }
-                  ]}
-                  columns={2}
-                  gap="gap-8 md:gap-16"
-                  marginBottom="mb-8"
-                />
+                <div className="grid md:grid-cols-2 gap-8 md:gap-16 mb-8">
+                  {/* 美容鍼の仕組み */}
+                  <div className="bg-white p-6 rounded-lg shadow-md">
+                    <h3 className="text-xl font-semibold text-secondary-dark mb-3">美容鍼の仕組み</h3>
+                    <p className="text-gray-700">
+                      鍼を打つことでお顔に小さな傷が出来ます。傷がつくことで【線維芽細胞】が働き傷を修復します。傷を修復する時に自身の肥細胞が新しくなるため肥質の改善に繋がります。
+                    </p>
+                  </div>
+
+                  {/* 血流改善の効果 */}
+                  <div className="bg-secondary-light bg-opacity-10 p-6 rounded-lg shadow-md">
+                    <h3 className="text-xl font-semibold text-secondary-dark mb-3">血流改善の効果</h3>
+                    <p className="text-gray-700">
+                      鍼を打つことで血流の改善がみられ固まった表情筋が柔らかくなり、重たい老廃物も流れるため術後すぐに引きあがった実感を得られます。
+                    </p>
+                  </div>
+                </div>
                 
                 <div className="bg-accent bg-opacity-10 p-4 rounded-lg border-l-4 border-accent">
                   <h3 className="flex items-center text-xl font-bold mb-2 text-secondary-dark">
@@ -219,6 +218,94 @@ const Acupuncture = () => {
               gap="gap-8 md:gap-16"
               marginBottom="mb-12"
             />
+
+            {/* 美容鍼の流れ セクション */}
+            <div className="my-12 p-6 bg-white rounded-lg shadow-lg">
+              <h2 className="text-2xl font-bold mb-6 text-secondary-dark border-b-2 border-primary pb-2 text-center">
+                美容鍼の流れ
+              </h2>
+              <p className="text-lg text-gray-700 mb-8">
+                当院の美容鍼メニューはただ顔に鍼をするだけではなく、全身の気血の流れを重要視し内側から綺麗になってもらうをテーマに行います。
+              </p>
+
+              <div className="space-y-8">
+                {/* ステップ 1: カウンセリング */}
+                <div>
+                  <h3 className="text-xl font-semibold text-secondary-dark mb-2 flex items-center">
+                    <span className="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 text-lg shrink-0">1</span>
+                    カウンセリング
+                  </h3>
+                  <p className="text-gray-700 ml-11">
+                    お肌の状態や気になる点や生活習慣などを聞いて、一人一人の体調や悩みに合わせた治療をオーダーメイドで組み立てていきます。
+                  </p>
+                </div>
+
+                {/* ステップ 2: 首肩のマッサージ及び鍼施術 */}
+                <div className="md:flex md:items-start md:space-x-6">
+                  <div className="md:flex-1">
+                    <h3 className="text-xl font-semibold text-secondary-dark mb-2 flex items-center">
+                      <span className="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 text-lg shrink-0">2</span>
+                      首肩のマッサージ及び鍼施術
+                    </h3>
+                    <p className="text-gray-700 md:ml-11">
+                      最初は固まった筋肉をほぐし、鍼を打ちます。首肩のコリは頭皮の緊張や血液の流れの悪さにつながるので、先ずは血流を良くするために施術します。
+                    </p>
+                  </div>
+                  <div className="md:w-1/3 mt-4 md:mt-0">
+                    <img src="/images/beauty02.jpg" alt="首肩のマッサージ及び鍼施術" className="rounded-lg shadow-md w-full" />
+                  </div>
+                </div>
+
+                {/* ステップ 3: 仰向けで頭部，顔のマッサージ */}
+                <div className="md:flex md:items-start md:space-x-6">
+                  <div className="md:flex-1">
+                    <h3 className="text-xl font-semibold text-secondary-dark mb-2 flex items-center">
+                      <span className="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 text-lg shrink-0">3</span>
+                      仰向けで頭部，顔のマッサージ
+                    </h3>
+                    <p className="text-gray-700 md:ml-11">
+                      鍼をする前に頭部，顔をほぐす事でリラックス出来ます。血液の流れも良くなり、更に鍼の痛みを軽減させます。
+                    </p>
+                  </div>
+                  <div className="md:w-1/3 mt-4 md:mt-0">
+                    <img src="/images/beauty03.jpg" alt="仰向けで頭部，顔のマッサージ" className="rounded-lg shadow-md w-full" />
+                  </div>
+                </div>
+
+                {/* ステップ 4: 顔に鍼施術 */}
+                <div className="md:flex md:items-start md:space-x-6">
+                  <div className="md:flex-1">
+                    <h3 className="text-xl font-semibold text-secondary-dark mb-2 flex items-center">
+                      <span className="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 text-lg shrink-0">4</span>
+                      顔に鍼施術
+                    </h3>
+                    <p className="text-gray-700 md:ml-11">
+                      一人一人に合わせた鍼をお顔に打っていきます。<br />
+                      ※目の周りなど内出血や痛みのリスクが高いところはシール鍼にて刺激量を減らして気持ちよく受けてもらえる様に工夫しております。
+                    </p>
+                  </div>
+                  <div className="md:w-1/3 mt-4 md:mt-0">
+                    <img src="/images/beauty04.jpg" alt="顔に鍼施術" className="rounded-lg shadow-md w-full" />
+                  </div>
+                </div>
+
+                {/* ステップ 5: 鍼の効果を更に引き出すため */}
+                <div>
+                  <h3 className="text-xl font-semibold text-secondary-dark mb-2 flex items-center">
+                    <span className="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 text-lg shrink-0">5</span>
+                    鍼の効果を更に引き出すため
+                  </h3>
+                  <p className="text-gray-700 ml-11">
+                    6分〜10分程置いておきます。
+                  </p>
+                </div>
+              </div>
+
+              {/* 補足情報 */}
+              <p className="mt-10 text-md text-gray-700 bg-blue-50 p-4 rounded-lg border-l-4 border-blue-500 shadow">
+                <span className="font-semibold">※</span>当院の美容鍼は腹部の冷えの改善に遠赤外線ドームをお腹に当てながら施術します。お腹の冷えを改善する事で身体の内側から綺麗にする事を心掛けています。
+              </p>
+            </div>
         </div>
       </div>
     </div>

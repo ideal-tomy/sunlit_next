@@ -145,7 +145,7 @@ const Home = () => {
               <Link href="/private-treatment" className="block h-full">
                 <div className="relative h-64 overflow-hidden">
                   <img 
-                    src="./images/2.png" 
+                    src="./images/private-treatment02.jpg" 
                     alt="自由診療" 
                     className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                   />

@@ -8,10 +8,16 @@ const PrivateTreatment = () => {
   return (
     <div className="page-container">
       {/* ヒーローセクション */}
-      <div style={{ position: 'relative', height: '320px', overflow: 'hidden' }}>
-        <img src="/images/01.png" alt="自由診療" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
-        <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, backgroundColor: 'rgba(0,0,0,0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-          <h1 style={{ color: 'white', fontSize: '2rem', fontWeight: 'bold', textAlign: 'center' }}>自由診療</h1>
+      <div className="relative w-full aspect-[16/9] pt-[72px]">
+        <img
+          src="/images/01.png"
+          alt="自由診療"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/30 p-4">
+          <h1 className="text-white text-2xl md:text-3xl font-bold text-center">
+            自由診療
+          </h1>
         </div>
       </div>
       
@@ -49,7 +55,7 @@ const PrivateTreatment = () => {
                     initialPrice: '¥5,200',
                     duration: '60分',
                     description: '全身の調整を行い、身体全体のバランスを整えます。慢性的な疲れや不調にお悩みの方におすすめです。',
-                    imageSrc: '/images/02-01.png',
+                    imageSrc: '/images/full.jpg',
                     imageAlt: '全身整体'
                   }
                 ]
@@ -63,7 +69,7 @@ const PrivateTreatment = () => {
                     initialPrice: '¥3,100',
                     duration: '30分',
                     description: '定期的なメンテナンスとして、気になる部分を重点的に施術します。忙しい方や部分的な不調にお悩みの方に最適です。',
-                    imageSrc: '/images/02-01.png',
+                    imageSrc: '/images/mente02.jpg',
                     imageAlt: 'メンテナンス整体'
                   }
                 ]
@@ -87,7 +93,7 @@ const PrivateTreatment = () => {
                     initialPrice: '¥7,800',
                     duration: '90分',
                     description: '全身の調整に加え、特に気になる部分に時間をかけて丁寧に施術します。長期的な不調や複合的な症状にお悩みの方におすすめです。',
-                    imageSrc: '/images/02-01.png',
+                    imageSrc: '/images/mente03.jpg',
                     imageAlt: '特別整体'
                   }
                 ]
@@ -187,9 +193,9 @@ const PrivateTreatment = () => {
             </ul>
           </div>
 
-          <div className="my-12">
+          {/* <div className="my-12">
             <ImageAspectRatioTest />
-          </div>
+          </div> */}
 
           <div className="text-center mb-12">
             <Link href="/contact" className="inline-block bg-primary hover:bg-primary-dark text-white font-bold py-3 px-8 rounded-full transition duration-300 transform hover:-translate-y-1 flex items-center justify-center mx-auto">
