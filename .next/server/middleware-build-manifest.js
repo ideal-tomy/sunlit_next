@@ -24,11 +24,6 @@ self.__BUILD_MANIFEST = {
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/acupuncture": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/acupuncture.js"
-    ],
     "/private-treatment": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",

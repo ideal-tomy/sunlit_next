@@ -3,6 +3,6 @@
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
   "/": "pages/index.js",
-  "/acupuncture": "pages/acupuncture.js",
-  "/private-treatment": "pages/private-treatment.js"
+  "/private-treatment": "pages/private-treatment.js",
+  "/acupuncture": "pages/acupuncture.js"
 }
