@@ -47,7 +47,7 @@ const Staff = () => {
                 <div className="md:w-1/2">
                   <div className="p-6">
                     <div className="flex items-center mb-3">
-                      <h3 className="text-2xl font-bold text-secondary-dark">院長 落合 竹一</h3>
+                      <h3 className="text-2xl font-bold text-secondary-dark">院長 落合 竜一</h3>
                     </div>
                     <p className="text-lg text-gray-600 mb-4">柔道整復師・鍼灸師</p>
                     

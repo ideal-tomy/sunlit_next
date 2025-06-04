@@ -83,7 +83,7 @@ const Home = () => {
             </span>
           </p>
           <Link 
-            href="#contact" 
+            href="/contact" 
             className="hidden md:inline-block bg-primary hover:bg-primary-dark text-white px-6 py-3 rounded-md transition-colors duration-300 font-medium"
           >
             ご予約はこちら
@@ -339,10 +339,10 @@ const Home = () => {
                 健康に関する情報や、当院からのお知らせを定期的に更新しています。
               </p>
               <Link 
-                href="/blog" 
+                href="/instagram" 
                 className="bg-primary hover:bg-primary-dark text-white px-6 py-3 rounded-md transition-colors duration-300 font-medium inline-block"
               >
-                ブログを読む
+                インスタグラム
               </Link>
             </div>
           </div>

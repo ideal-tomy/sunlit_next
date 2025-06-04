@@ -69,12 +69,12 @@ const Navbar = () => {
                 {item.name}
               </Link>
             ))}
-            <a
-              href="tel:0312345678"
+            <Link
+              href="/contact"
               className="bg-primary hover:bg-primary-dark text-white px-4 py-2 rounded-md transition-colors duration-300 font-medium"
             >
               ご予約
-            </a>
+            </Link>
           </div>
 
           {/* モバイルメニューボタン */}
