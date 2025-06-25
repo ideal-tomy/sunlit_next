@@ -9,6 +9,8 @@ const Contact = () => {
     subject: '',
     message: ''
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<'success' | 'error' | null>(null);
 
   // OpenAIチャットボット用の状態管理
   const [chatInput, setChatInput] = useState('');
@@ -25,16 +27,42 @@ const Contact = () => {
   };
 
   // フォーム送信ハンドラ
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    alert('お問い合わせありがとうございます。内容を確認の上、折り返しご連絡いたします。');
-    setFormData({
-      name: '',
-      email: '',
-      phone: '',
-      subject: '',
-      message: ''
-    });
+    setIsSubmitting(true);
+    setSubmitStatus(null);
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setSubmitStatus('success');
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          subject: '',
+          message: ''
+        });
+        // Reset checkbox
+        const privacyCheckbox = document.getElementById('privacy') as HTMLInputElement;
+        if (privacyCheckbox) {
+          privacyCheckbox.checked = false;
+        }
+      } else {
+        setSubmitStatus('error');
+      }
+    } catch (error) {
+      setSubmitStatus('error');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   // OpenAIチャットボット送信ハンドラ
@@ -296,11 +324,22 @@ const Contact = () => {
                 </div>
                 
                 <div className="text-center">
+                  {submitStatus === 'success' && (
+                    <p className="text-green-600 mb-4">
+                      お問い合わせありがとうございます。内容を確認の上、折り返しご連絡いたします。
+                    </p>
+                  )}
+                  {submitStatus === 'error' && (
+                    <p className="text-red-500 mb-4">
+                      送信に失敗しました。お手数ですが、時間をおいて再度お試しいただくか、お電話にてお問い合わせください。
+                    </p>
+                  )}
                   <button 
                     type="submit" 
-                    className="bg-primary hover:bg-primary-dark text-white font-medium py-3 px-8 rounded-md transition-colors duration-300"
+                    className="bg-primary hover:bg-primary-dark text-white font-medium py-3 px-8 rounded-md transition-colors duration-300 disabled:bg-gray-400"
+                    disabled={isSubmitting}
                   >
-                    送信する
+                    {isSubmitting ? '送信中...' : '送信する'}
                   </button>
                 </div>
               </form>
