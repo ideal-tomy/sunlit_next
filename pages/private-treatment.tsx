@@ -158,7 +158,7 @@ const PrivateTreatment = () => {
                     price: '¥2,800',
                     duration: '30分',
                     description: '一般的な吸い玉法ではなく、筋肉や経絡に置くことでモビリティの向上や痛みの減少を目指す法です。',
-                    imageSrc: '/images/IMG_0042.jpg',
+                    imageSrc: '/images/func.jpg',
                     imageAlt: 'ファンクショナルカッピング'
                   }
                 ]

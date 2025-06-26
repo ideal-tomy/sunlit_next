@@ -229,9 +229,13 @@ const Home = () => {
             <div className="md:w-1/2">
               <h2 className="text-3xl md:text-4xl font-bold mb-6 text-secondary-dark">治療理念</h2>
               <div className="w-24 h-1 bg-primary mb-8"></div>
-              <p className="text-lg mb-6 text-gray-700">
-                私たちは「治療」だけでなく「予防」も重視しています。痛みが出てから対処するのではなく、
-                日常生活の中で痛みを予防するための生活習慣や姿勢の改善もサポートします。
+              <p className="text-lg font-bold text-gray-700">心身一如</p>
+              <p className="text-lg mb-6 text-gray-700 whitespace-pre-line">
+心と身体は繋がっています。
+身体が疲れている時は心も余裕がなくなり、心が疲れている時は身体も疲れを感じます。
+身体の疲れを取ることで心に余裕のある快適な毎日を過ごせます。
+私達施術者も心と身体に余裕のある働き方を大事にしています。
+施術者も心と身体に余裕を持つことで皆様としっかり向き合えると思っています。
               </p>
               <p className="text-lg mb-6 text-gray-700">
                 また、患者様一人ひとりの生活環境や仕事内容を考慮した、オーダーメイドの治療プランを提案。
