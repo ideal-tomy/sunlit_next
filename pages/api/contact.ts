@@ -2,7 +2,7 @@ import type { NextApiRequest, NextApiResponse } from 'next';
 import { Resend } from 'resend';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
-const toEmail = 'ryojitomii@gmail.com';
+const toEmail = 'sanritto0407@gmail.com';
 
 export default async (req: NextApiRequest, res: NextApiResponse) => {
   if (req.method === 'POST') {
@@ -14,7 +14,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
       }
 
       const { data, error } = await resend.emails.send({
-        from: 'SunlitWest Contact Form <onboarding@resend.dev>',
+        from: 'SunlitWest Contact Form <info@send.sunlit.fit>',
         to: [toEmail],
         subject: `【HP問い合わせ】${subject}`,
         replyTo: email,

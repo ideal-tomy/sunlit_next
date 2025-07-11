@@ -1,8 +1,6 @@
 {
-  "/_error": "pages/_error.js",
   "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/insurance": "pages/insurance.js",
-  "/staff": "pages/staff.js",
-  "/instagram": "pages/instagram.js"
+  "/contact": "pages/contact.js"
 }
