@@ -55,10 +55,9 @@ const Instagram: React.FC = () => {
             </p>
             
             {/* SnapWidget インスタグラム埋め込み */}
-            <div className="instagram-container mx-auto mb-12 text-center">
-              {/* 埋め込みiframe - SnapWidgetから生成されるコード */}
+            <div className="instagram-container mx-auto mb-12 flex justify-center items-center">
               <iframe 
-                src="https://snapwidget.com/embed/1023495" 
+                src="https://snapwidget.com/embed/1102441" 
                 className="snapwidget-widget" 
                 allowTransparency={true} 
                 frameBorder="0" 
@@ -66,10 +65,12 @@ const Instagram: React.FC = () => {
                 style={{ 
                   border: 'none', 
                   overflow: 'hidden',
-                  width: '100%',
+                  width: '765px',
+                  height: '510px',
+                  display: 'block',
+                  margin: '0 auto',
                 }}
-                height="600"
-                title="サンリットウエスト鍼灸整骨院のインスタグラム"
+                title="Posts from Instagram"
               ></iframe>
             </div>
             

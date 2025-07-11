@@ -94,70 +94,6 @@ const Insurance = () => {
               </div>
             </div>
             <div className="mb-12">
-              <h2 className="text-2xl font-bold mb-4 text-secondary-dark flex items-center justify-center">
-                保険診療の種類
-              </h2>
-              {/* 整形外科とリハビリテーション */}
-              <div className="bg-primary bg-opacity-10 p-4 rounded-lg mb-8">
-                <h3 className="text-2xl font-bold text-secondary-dark flex items-center justify-center">
-                  整形外科・リハビリテーション
-                </h3>
-              </div>
-              <InfoCardGrid
-                menuGroups={[{
-                  title: '整形外科',
-                  items: [{
-                    title: '整形外科',
-                    price: '保険適用(税込)',
-                    duration: '症状により異なります',
-                    description: '怪我や整形外科的症状に対する専門的な治療を行います。'
-                  }]
-                }, {
-                  title: 'リハビリテーション',
-                  items: [{
-                    title: 'リハビリテーション',
-                    price: '保険適用(税込)',
-                    duration: '指示により異なります',
-                    description: '機能回復や体力向上のためのリハビリテーションを提供します。'
-                  }]
-                }]}
-                columns={2}
-                gap="gap-6"
-                marginBottom="mb-8"
-              />
-              {/* 鍼灸治療とマッサージ治療 */}
-              <div className="mt-16 mb-12">
-                <h3 className="text-2xl font-bold mb-6 text-secondary-dark text-center bg-primary-light py-3 px-4 rounded-lg border-l-4 border-primary">鍼灸・マッサージ治療</h3>
-                <InfoCardGrid
-                  menuGroups={[{
-                    title: '鍼灸治療',
-                    items: [{
-                      title: '鍼灸治療',
-                      price: '保険適用(税込)',
-                      duration: '20分程度',
-                      description: '保険適用の鍼灸治療で、痛みの緩和や血行改善を促進します。'
-                    }]
-                  }, {
-                    title: 'マッサージ治療',
-                    items: [{
-                      title: 'マッサージ治療',
-                      price: '保険適用(税込)',
-                      duration: '15分程度',
-                      description: '機能回復や痛みの緩和を目的とした医療マッサージを行います。'
-                    }]
-                  }]}
-                  columns={2}
-                  gap="gap-6"
-                  marginBottom="mb-8"
-                />
-              </div>
-              <div className="bg-white p-6 rounded-lg shadow-sm border-l-4 border-primary mt-12 mb-6">
-                <p className="text-lg text-gray-700">
-                  以上のような保険診療の種類があります。当院では、保険診療と併用して更に早く完治できるように<span className="font-bold text-primary">特別な電気治療や部分鍼治療</span>を推奨しております。
-                </p>
-              </div>
-            </div>
-            <div className="mb-12">
               <h2 className="text-2xl font-bold mb-6 text-secondary-dark flex items-center justify-center">
                 診療の流れ
               </h2>
@@ -236,11 +172,12 @@ const Insurance = () => {
             </div>
             <div className="bg-accent bg-opacity-10 p-6 rounded-lg mt-8 mb-12">
               <h3 className="text-xl font-bold mb-4 text-secondary-dark flex items-center">
-                保険診療に関する注意事項
+                保険診療に対する注意事項
               </h3>
               <ul className="list-disc list-inside space-y-2 text-gray-700">
-                <li>保険証は毎回ご持参ください</li>
-                <li>保険適用の治療は医師の指示に基づいて行われます</li>
+                <li>保険証は毎月ご持参ください。</li>
+                <li>骨折・脱臼をされた場合の治療は医師の同意が必要となります</li>
+                <li>医療証をお持ちの方はご持参ください</li>
                 <li>保険診療と自費診療を併用する場合は事前にご相談ください</li>
                 <li>交通事故の場合は自賠責保険の適用となります</li>
               </ul>
