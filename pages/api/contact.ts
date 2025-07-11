@@ -14,7 +14,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
       }
 
       const { data, error } = await resend.emails.send({
-        from: 'SunlitWest Contact Form <info@send.sunlit.fit>',
+        from: 'SunlitWest Contact Form <SunlitWest <onboarding@resend.dev>',
         to: [toEmail],
         subject: `【HP問い合わせ】${subject}`,
         replyTo: email,
