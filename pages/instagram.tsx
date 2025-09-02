@@ -55,23 +55,19 @@ const Instagram: React.FC = () => {
             </p>
             
             {/* SnapWidget インスタグラム埋め込み */}
-            <div className="instagram-container mx-auto mb-12 flex justify-center items-center">
-              <iframe 
-                src="https://snapwidget.com/embed/1102441" 
-                className="snapwidget-widget" 
-                allowTransparency={true} 
-                frameBorder="0" 
-                scrolling="no" 
-                style={{ 
-                  border: 'none', 
-                  overflow: 'hidden',
-                  width: '765px',
-                  height: '510px',
-                  display: 'block',
-                  margin: '0 auto',
-                }}
-                title="Posts from Instagram"
-              ></iframe>
+            <div className="instagram-container mx-auto mb-12 flex justify-center">
+              <div style={{ width: '100%', maxWidth: 900 }}>
+                <iframe
+                  src="https://snapwidget.com/embed/1102441"
+                  className="snapwidget-widget"
+                  title="Posts from Instagram"
+                  allowTransparency
+                  frameBorder="0"
+                  scrolling="no"
+                  loading="lazy"
+                  style={{ border: 0, overflow: 'hidden', width: '100%', height: 510 }}
+                />
+              </div>
             </div>
             
             <div className="text-center mt-8">
