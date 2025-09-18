@@ -1,6 +1,9 @@
 {
   "/_app": "pages/_app.js",
-  "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
+  "/_error": "pages/_error.js",
+  "/insurance": "pages/insurance.js",
+  "/staff": "pages/staff.js",
+  "/acupuncture": "pages/acupuncture.js",
   "/contact": "pages/contact.js"
 }
